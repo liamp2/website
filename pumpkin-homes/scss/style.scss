@@ -8,10 +8,6 @@ $green: #64b743;
     background: white;
 }
 
-.carousel-item{
-    height: 400px;
-}
-
 .carousel-image1{
     background: url('../img/carousel1.jpg');
     background-size: cover;
@@ -56,6 +52,37 @@ $green: #64b743;
     background-repeat: no-repeat;
 }
 
-.slick-prev::before, .slick-next::before{
-    color: $primary !important;
+.main-carousel{
+    position: relative;
+
+
+    .slick-prev::before, .slick-next::before{
+        color: $green !important;
+    }
+
+    .slick-dots li button:before{
+        color: $green !important;
+        position: absolute;
+        top: -3rem;
+    }
 }
+
+#testimonials{
+
+    .slick-prev::before, .slick-next::before{
+        color: $primary !important;
+    }
+}
+
+.main-footer{
+
+    .text-orange{
+        $text-color: tint-color($primary, 90%) !default;
+        color: $text-color;
+    }
+    .fas{
+        color: $primary;
+    }
+    
+}
+

@@ -3,9 +3,6 @@
   opacity: 0.5;
   background: white; }
 
-.carousel-item {
-  height: 400px; }
-
 .carousel-image1 {
   background: url("../img/carousel1.jpg");
   background-size: cover;
@@ -49,5 +46,19 @@
   background-size: cover;
   background-repeat: no-repeat; }
 
-.slick-prev::before, .slick-next::before {
+.main-carousel {
+  position: relative; }
+  .main-carousel .slick-prev::before, .main-carousel .slick-next::before {
+    color: #64b743 !important; }
+  .main-carousel .slick-dots li button:before {
+    color: #64b743 !important;
+    position: absolute;
+    top: -3rem; }
+
+#testimonials .slick-prev::before, #testimonials .slick-next::before {
   color: #e68217 !important; }
+
+.main-footer .text-orange {
+  color: tint-color(#e68217, 90%); }
+.main-footer .fas {
+  color: #e68217; }
