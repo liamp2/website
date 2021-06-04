@@ -86,3 +86,27 @@ $green: #64b743;
     
 }
 
+#six-steps{
+    .card-body{
+        position: relative;
+        
+        .vertical-text-center{
+            background: yellow;
+            position: absolute;
+            top: 50%;
+        }
+    }
+}
+
+.Aligner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Aligner-item {
+    max-width: 100%;
+  }
+  
+  .Aligner-item--top {
+    align-self: flex-start;
+  }
