@@ -79,3 +79,15 @@
 
 .Aligner-item--top {
   align-self: flex-start; }
+
+.order-6 {
+  order: 6; }
+
+.order-7 {
+  order: 7; }
+
+.order-8 {
+  order: 8; }
+
+.order-9 {
+  order: 9; }
