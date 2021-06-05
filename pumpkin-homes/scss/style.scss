@@ -123,3 +123,17 @@ $green: #64b743;
 .order-9{
     order: 9;
 }
+
+.text-justify{
+    text-align: justify;
+}
+
+.hr-green{
+    color: $green;
+    box-shadow: 0px 1px 2px $green;
+}
+
+.hr-primary{
+    color: $primary;
+    box-shadow: 0px 1px 2px $primary;
+}
