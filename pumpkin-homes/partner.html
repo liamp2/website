@@ -76,7 +76,7 @@
                     </ul>
                     
                     <div class="d-grid gap-2 my-3">
-                        <button class="btn btn-primary">Contact Us</button>
+                        <a  href="#contactForm" class="btn btn-primary text-white">Contact Us</a>
                     </div>
                 </div>
 
@@ -169,27 +169,65 @@
             <div class="row">
                 <h2 class="text-center text-primary">Mortgage Brokers</h2>
                 <hr class="hr-green">
-                <p class="text-center">
-                    Do you have a client that you cannot help find financing for due to damaged credit? Have you turned down prospects who have poor credit ? Do you want to expand your business to address a new business segment with investors?
-                </p>
-                <p class="text-center"><strong>We can help!</strong></p>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        We will work together to qualify the client for success now and for the End of Term.
-                    </li>
-                    <li class="list-group-item">
-                        We will finance the home for the client  through your mortgage brokerage.
-                    </li>
-                    <li class="list-group-item">
-                        You will be in an ideal situation to finance the client for their own mortgage at the end of a 2-4 year RTO term.
-                    </li>
-                    <li class="list-group-item">
-                        We provide professional referral fees which increase with repeat referrals.
-                    </li>
-                    <li class="list-group-item">
-                        Request  details on our Professional Lead Referral Fees.
-                    </li>
-                </ul>
+                <div class="col-md-7">
+                    <p class="text-center">
+                        Do you have a client that you cannot help find financing for due to damaged credit? Have you turned down prospects who have poor credit ? Do you want to expand your business to address a new business segment with investors?
+                    </p>
+                    <p class="text-center"><strong>We can help!</strong></p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            We will work together to qualify the client for success now and for the End of Term.
+                        </li>
+                        <li class="list-group-item">
+                            We will finance the home for the client  through your mortgage brokerage.
+                        </li>
+                        <li class="list-group-item">
+                            You will be in an ideal situation to finance the client for their own mortgage at the end of a 2-4 year RTO term.
+                        </li>
+                        <li class="list-group-item">
+                            We provide professional referral fees which increase with repeat referrals.
+                        </li>
+                        <li class="list-group-item">
+                            Request  details on our Professional Lead Referral Fees.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5">            
+                    <div class="testimonial-header mb-3">
+                        <h5 class="text-primary text-center pb-3">Hear From Our Satisfied Partners!</h5>
+                    </div>
+                    <div class="testimonial-slider">
+                        <div>
+                            <blockquote class="blockquote">
+                                <p class="mb-4 fst-italic fs-6 text-success">
+                                    "The Mortgage Wellness Group always enjoys working with David Patterson and the team from Pumpkin Homes.
+                                    They are always responsive to our clients, and our clients' individual needs and circumstances. 
+                                    Through the entire engagement they are thorough and professional. 
+                                    Pumpkin Homes is quick to earn our clients' trust and always put our clients' concerns at ease.
+                                    We look forward to working with David and Pumpkin Homes in the future." 
+                                </p>
+                                <footer class="blockquote-footer">Nick L'Ecuyer
+                                    <cite title="Customer">Principal Broker, The Mortgage Wellness Group</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                        
+                    
+                        <div>
+                            <blockquote class="blockquote">
+                                <p class="mb-4 fst-italic fs-6 text-success">
+                                    I have witnessed the evolution of Pumpkin Homes from it's inception an have been impressed with them from day one. The leadership group of this company is clearly customer focused.
+                                    and as the principal broker of a licensed, successful mortgage brokerage in Ontario, that is important to me.
+                                    Serving clinetele that are candidates for a rent-to-own program is not easy and requires a common sense approach to lending. 
+                                    Pumpkin Homes deals with challenging financial circumstances in such a way as to assist today's challenges to become tomorrow's successes.
+                                </p>
+                                <footer class="blockquote-footer">Chris Nichilo
+                                    <cite title="Customer"> President, Magnetic Mortgages and Investing</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>            
+                </div>
             </div>
         </div>
     </section>
@@ -234,11 +272,20 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    
+    <!--SLICK SLIDE  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <script>
         //get the current year for the copyright
         $('#year').text(new Date().getFullYear());
+
+        $('.testimonial-slider').slick({
+            inifinite: true,
+            slideToShow: 1,
+            slideToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 11500,
+        });
     </script>
 </body>
 </html>
