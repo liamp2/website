@@ -91,7 +91,6 @@ $green: #64b743;
         position: relative;
         
         .vertical-text-center{
-            background: yellow;
             position: absolute;
             top: 50%;
         }
@@ -136,4 +135,27 @@ $green: #64b743;
 .hr-primary{
     color: $primary;
     box-shadow: 0px 1px 2px $primary;
+}
+
+.kenya-slider{
+    width: auto;
+    height: auto;
+
+    .big-img{
+        margin-top: -6rem;
+        margin-bottom: -6rem;
+    }
+}
+
+#faq{
+    a{
+        text-decoration: none;
+    }
+}
+
+#application-modal{
+
+    .btn:hover{
+        color: white;
+    }
 }
