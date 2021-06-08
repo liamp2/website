@@ -67,8 +67,11 @@
               <h5 class="modal-title text-primary ">Rent to Own Application</h5>
               <button class="btn-close" data-bs-dismiss="modal"></button>
             </div>
+
+
+
             <div class="modal-body">
-              <form>
+              <form name="applicationForm">
                 <div class="mb-3">
                     <span class="text-danger">* Indicates a Required Field</span> 
                 </div>
@@ -80,27 +83,48 @@
                     <label class="input-group-text">
                          Applicant Name <span class="text-danger ms-auto"> &nbsp;*</span>  
                     </label>
-                    <input type="name" class="form-control" placeholder="Applicant Name" ng-model="applicantName">
+                    <input type="name" class="form-control" placeholder="Applicant Name" 
+                        name="applicantName" 
+                        ng-class="{'is-invalid': (applicationForm.applicantName.$touched && applicationForm.applicantName.$invalid)}"
+                        ng-model="form.applicantName" required>
+                    <div class="invalid-feedback">
+                        Applicant name is invalid!
+                    </div>
                 </div>
+                
                 <div class="form-group input-group mb-3">
                     <label for="name" class="input-group-text">
                         Co-Applicant Name
                     </label>
-                    <input type="name1" class="form-control" placeholder="Co-Applicant Name" ng-model="coApplicantName">
+                    <input type="name1" class="form-control" placeholder="Co-Applicant Name" 
+                        name="coApplicantName" 
+                        ng-model="form.coApplicantName">
                 </div>
 
                 <div class="form-group input-group mb-3">
                     <label for="phone-number" class="input-group-text">
                         Phone Number <span class="text-danger"> &nbsp;*</span>  
                         </label>
-                    <input type="telNo" class="form-control" placeholder="123-456-7890" ng-model="phoneNumber">
+                    <input type="telNo" class="form-control" placeholder="123-456-7890" 
+                        name="phoneNumber" 
+                        ng-class="{'is-invalid': (applicationForm.phoneNumber.$touched && applicationForm.phoneNumber.$invalid)}"
+                        ng-model="form.phoneNumber" required>
+                    <div class="invalid-feedback">
+                        Phone number is invalid!
+                    </div>
                 </div>
 
                 <div class="form-group input-group mb-3">
                     <label for="phone-number" class="input-group-text">
                         Email <span class="text-danger"> &nbsp;*</span>   
                     </label>
-                    <input type="email" class="form-control" placeholder="Email" ng-model="email">
+                    <input type="email" class="form-control" placeholder="Email" 
+                        name="email" 
+                        ng-class="{'is-invalid': (applicationForm.email.$touched && applicationForm.email.$invalid)}"
+                        ng-model="form.email" required>
+                    <div class="invalid-feedback">
+                        Email is invalid!
+                    </div>
                 </div>
 
                 
@@ -110,14 +134,28 @@
                     </label>              
                 
                     <div class="form-check form-check-inline Aligner-item">
-                        <input type="radio" class="form-check-input" name="married-commonLaw"  value="true" ng-model="isMarried"> 
+                        <input type="radio" class="form-check-input" 
+                            name="marriedStatus"  
+                            value="true" 
+                            ng-class="{'is-invalid': (applicationForm.marriedStatus.$touched && applicationForm.marriedStatus.$invalid)}"
+                            ng-model="form.marriedStatus" required> 
                         <label for="" class="form-check-label">Yes</label>
+                        <div class="invalid-feedback">
+                            Married / Common Law Status is invalid!
+                        </div>
                     </div>
                 
                 
                     <div class="form-check form-check-inline">
-                        <input type="radio" class="form-check-input check" name="married-commonLaw"  value="false" ng-model="marriedStatus"> 
+                        <input type="radio" class="form-check-input" 
+                            name="marriedStatus"  
+                            value="false" 
+                            ng-class="{'is-invalid': (applicationForm.marriedStatus.$touched && applicationForm.marriedStatus.$invalid)}"
+                            ng-model="form.marriedStatus" required> 
                         <label for="" class="form-check-label">No</label>
+                        <div class="invalid-feedback">
+                            Married / Common Law Status is invalid!
+                        </div>
                     </div>
                 </div>
                 
@@ -126,28 +164,52 @@
                     <label class="input-group-text">
                         What City/Region are you looking to live in? <span class="text-danger">&nbsp; *</span>   
                     </label>
-                    <input type="city" class="form-control" placeholder="City Name" ng-model="region"> 
+                    <input type="text" class="form-control" placeholder="City Name" 
+                        name="region" 
+                        ng-class="{'is-invalid': (applicationForm.region.$touched && applicationForm.region.$invalid)}"
+                        ng-model="form.region" required> 
+                    <div class="invalid-feedback">
+                        Desired region is invalid!
+                    </div>
                 </div>
 
                 <div class="form-group input-group mb-3">
                     <label class="input-group-text datepicker">
                         When are you looking to move in? <span class="text-danger">&nbsp; *</span>   
                     </label>
-                    <input type="date" class="form-control" placeholder="Move in Date" ng-model="moveInDate">
+                    <input type="date" class="form-control" placeholder="Move in Date" 
+                        name="moveInDate"
+                        ng-class="{'is-invalid': (applicationForm.moveInDate.$touched && applicationForm.moveInDate.$invalid)}"
+                        ng-model="form.moveInDate" required>
+                    <div class="invalid-feedback">
+                        Desired move in date is invalid!
+                    </div>
                 </div>
 
                 <div class="form-group input-group mb-3">
                     <label class="input-group-text">
                         What value of home are you looking at? <span class="text-danger"> &nbsp;*</span>  
                     </label>
-                    <input type="money" class="form-control" placeholder="$" ng-model="homeValue">
+                    <input type="integer" class="form-control" placeholder="$" 
+                        name="homeValue"
+                        ng-class="{'is-invalid': (applicationForm.homeValue.$touched && applicationForm.homeValue.$invalid)}"
+                        ng-model="form.homeValue" required>
+                    <div class="invalid-feedback">
+                        Desired home value is invalid!
+                    </div>
                 </div>
 
                 <div class="form-group input-group mb-3">
                     <label class="input-group-text">
                         How many bedrooms? <span class="text-danger"> &nbsp;*</span>  
                     </label>
-                    <input type="number" min="1" max="10" class="form-control" value="3" ng-model="bedrooms">
+                    <input type="number" min="1" max="10" class="form-control" value="3" 
+                        name="bedrooms" 
+                        ng-class="{'is-invalid': (applicationForm.bedrooms.$touched && applicationForm.bedrooms.$invalid)}"
+                        ng-model="form.bedrooms" required>
+                    <div class="invalid-feedback">
+                        Desired number of bedrooms is invalid!
+                    </div>
                 </div>
 
 
@@ -155,7 +217,13 @@
                     <label class="input-group-text">
                         What is your houselhold gross annual income? <span class="text-danger"> &nbsp;*</span>  
                     </label>
-                    <input type="money" class="form-control" placeholder="$" ng-model="grossIncome">
+                    <input type="number" class="form-control" min="0" max="10000000" placeholder="$" 
+                        name="grossIncome"
+                        ng-class="{'is-invalid': (applicationForm.grossIncome.$touched && applicationForm.grossIncome.$invalid)}"
+                        ng-model="form.grossIncome" required>
+                    <div class="invalid-feedback">
+                        Annual household gross income is invalid!
+                    </div>
                 </div>
 
 
@@ -163,7 +231,13 @@
                     <label class="input-group-text">
                         What amount of down payment can you afford? <span class="text-danger"> &nbsp;*</span>  
                     </label>
-                    <input type="money" class="form-control" placeholder="$" ng-model="downPayment">
+                    <input type="number" class="form-control" min="0" max="10000000" placeholder="$" 
+                        name="downPayment" 
+                        ng-class="{'is-invalid': (applicationForm.downPayment.$touched && applicationForm.downPayment.$invalid)}"
+                        ng-model="form.downPayment">
+                    <div class="invalid-feedback">
+                        Downpayment value is invalid!
+                    </div>
                 </div>
 
 
@@ -173,44 +247,59 @@
                     </label>              
                 
                     <div class="form-check form-check-inline Aligner-item">
-                        <input type="radio" class="form-check-input" name="credit-rating" id="good-credit-rating" value="true" ng-model="goodCreditRating"> 
+                        <input type="radio" class="form-check-input"
+                            name="credit-rating" 
+                            value="true" 
+                            ng-model="form.goodCreditRating" required> 
                         <label for="" class="form-check-label">Good</label>
                     </div>
                 
                 
                     <div class="form-check form-check-inline">
-                        <input type="radio" class="form-check-input" name="credit-rating" id="poor-credit-rating" value="false" ng-model="goodCreditRating" checked> 
+                        <input type="radio" class="form-check-input" 
+                        name="credit-rating"
+                        value="false" 
+                        ng-model="form.goodCreditRating" required> 
                         <label for="" class="form-check-label">Poor</label>
                     </div>
                 </div>
 
-                <div class="form-group input-group mb-3 Aligner" ng-show="(goodCreditRating == 'false')">
+                <div class="form-group input-group mb-3 Aligner" ng-show="(form.goodCreditRating == 'false')">
                     <label class="input-group-text form-check form-check-inline">
                         Have you met with a credit counsellor? <span class="text-danger"> &nbsp;*</span>  
                     </label>              
                 
                     <div class="form-check form-check-inline Aligner-item">
-                        <input type="radio" class="form-check-input" name="credit-counsellor" value="true" ng-model="metCounsellor"> 
+                        <input type="radio" class="form-check-input" 
+                            name="credit-counsellor" 
+                            value="true" 
+                            ng-model="form.metCounsellor"
+                            ng-required="form.goodCreditRating == 'false'"> 
                         <label for="" class="form-check-label">Yes</label>
                     </div>
                 
                 
                     <div class="form-check form-check-inline">
-                        <input type="radio" class="form-check-input" name="credit-counsellor" id="poor-credit-rating" value="false" ng-model="metCounsellor" checked> 
+                        <input type="radio" class="form-check-input" 
+                            name="credit-counsellor" 
+                            value="false" 
+                            ng-model="form.metCounsellor" 
+                            ng-required="form.goodCreditRating == 'false'"
+                            > 
                         <label for="" class="form-check-label">No</label>
                     </div>
                 </div>
 
                 <label >Do you have any Questions, Comments or Concerns?</label>
                 <div class="form-group input-group mb-3">
-                    <textarea class="form-control" name="additionalComments" id=""  rows="5" placeholder="Additional Comments"></textarea>
+                    <textarea class="form-control" name="additionalComments" id=""  rows="5" placeholder="Additional Comments" ng-model="form.comments"></textarea>
                 </div>
 
               </form>
             </div>
             <div class="modal-footer ">
                 <div class="input-group d-grid">
-                    <button class="btn btn-outline-primary" type="submit" ng-click="submitForm()">Submit</button>
+                    <button class="btn btn-primary text-white" type="submit" ng-disabled="applicationForm.$invalid" ng-click="submitForm()">Submit</button>
                 </div>
             </div>
           </div>
