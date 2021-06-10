@@ -1,3 +1,16 @@
+<?php
+    // if($_POST["message"]) {
+
+    $name = $_POST['applicantName'];
+    echo $name;
+    // if(mail("liamhockey2@gmail.com","Here is the subject line", "my message")){
+    //     echo "Success";
+    // } else{
+    //     echo "erorr";
+    // }
+    // }
+?>
+
 <!DOCTYPE html>
 <html lang="en" ng-app="formApp">
 <head>
@@ -71,7 +84,7 @@
 
 
             <div class="modal-body">
-              <form name="applicationForm" ng-submit="submitForm(form)">
+              <form name="applicationForm" action="<?php $_PHP_SELF ?>" method="POST">
                 <div class="mb-3">
                     <span class="text-danger">* Indicates a Required Field</span> 
                 </div>
