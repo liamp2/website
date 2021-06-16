@@ -1,8 +1,8 @@
 <?php
     // if($_POST["message"]) {
 
-    $name = $_POST['applicantName'];
-    echo $name;
+   // $name = $_POST['applicantName'];
+   // echo $name;
     // if(mail("liamhockey2@gmail.com","Here is the subject line", "my message")){
     //     echo "Success";
     // } else{
@@ -38,38 +38,7 @@
     <title>Pumpkin Homes</title>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">Pumpkin Homes</a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="feature-home.html" class="nav-link">Feature Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="RTO.html" class="nav-link">RTO Program</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" data-bs-target="#application-modal" data-bs-toggle="modal">Apply Now</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="partner.html" class="nav-link">Partners</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php include 'navbar.php' ?>
 
 
     <!-- APPLICATION MODAL -->
@@ -319,41 +288,7 @@
         </div>
       </div>
 
-    <!-- FOOTER -->
-    <footer class="main-footer bg-dark ">
-        <div class="container text-center text-primary">
-            <div class="pt-4">
-                <div class="col-lg-6 m-auto">
-                    <h3>Contact Us Now</h3>
-                    <form id="contactForm" action="">
-                        <div class="input-group mb-2">
-                            <span class="input-group-text"><i class="fas fa-user form-icon"></i></span>
-                            <input type="name" class="form-control" placeholder="Name">
-                        </div>
-                        <div class="input-group mb-2">
-                            <span class="input-group-text"><i class="fas fa-at"></i></span>
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="input-group mb-2">
-                            <span class="input-group-text"><i class="fas fa-pencil-alt"></i></span>
-                            <input type="Subject" class="form-control" placeholder="Subject">
-                        </div>
-                        <div class="input-group mb-2">
-                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>    
-                        </div>
-                        <div class="input-group d-grid mb-2">
-                            <button type="submit" class="btn btn-success">Submit</button>
-                        </div>
-                    </form>
-                    
-                </div>
-            </div>
-            <div class="col pb-1">
-                <p class="text-muted">Copyright &copy; <span id="year"></span></p>
-            </div>
-        </div>
-    </footer>
+    <?php include 'footer.php' ?>
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
