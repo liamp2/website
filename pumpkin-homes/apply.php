@@ -50,17 +50,12 @@
               <button class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
-
-
             <div class="modal-body">
               <form name="applicationForm" action="<?php $_PHP_SELF ?>" method="POST">
                 <div class="mb-3">
                     <span class="text-danger">* Indicates a Required Field</span> 
                 </div>
                 
-
-
-
                 <div class="form-group input-group mb-3">
                     <label class="input-group-text">
                          Applicant Name <span class="text-danger ms-auto"> &nbsp;*</span>  
@@ -287,8 +282,6 @@
           </div>
         </div>
       </div>
-
-    
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

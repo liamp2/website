@@ -22,7 +22,7 @@
                 </li>
                 <li class="nav-item">
                     <!-- <a href="apply.php" class="nav-link">Apply Now</a> -->
-                    <a class="nav-link" data-bs-target="#application-modal" data-bs-toggle="modal">Apply Now</a>
+                    <a href="" class="nav-link" data-bs-target="#application-modal" data-bs-toggle="modal">Apply Now</a>
                 </li>
                 <li class="nav-item">
                     <a href="partner.php" class="nav-link">Partners</a>
