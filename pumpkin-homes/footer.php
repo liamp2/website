@@ -104,7 +104,7 @@
 
 
 <!-- APPLICATION MODAL -->
-<div class="modal" id="application-modal" ng-app="formApp" ng-controller="formController">
+<div class="modal" id="application-modal" ng-controller="formController">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
         <div class="modal-header">
