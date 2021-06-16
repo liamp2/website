@@ -8,7 +8,7 @@
                     <a href="index.php" class="text-decoration-none">Home</a><br>
                     <a href="RTO.php" class="text-decoration-none">RTO Program</a><br>
                     <a href="about.php" class="text-decoration-none">About Us</a><br>
-                    <a class="text-decoration-none" data-bs-target="#application-modal" data-bs-toggle="modal">Apply Now</a><br>
+                    <a class="text-decoration-none" href="" data-bs-target="#application-modal" data-bs-toggle="modal">Apply Now</a><br>
                     <a href="partner.php#investors" class="text-decoration-none">Investors</a><br>
                     <a href="partner.php#realtors" class="text-decoration-none">Realtors</a><br>
                     <a href="partner.php#brokers" class="text-decoration-none">Brokers</a><br>
@@ -104,7 +104,7 @@
 
 
 <!-- APPLICATION MODAL -->
-<div class="modal" id="application-modal" ng-controller="formController">
+<div class="modal" id="application-modal" ng-app="formApp" ng-controller="formController">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
         <div class="modal-header">
