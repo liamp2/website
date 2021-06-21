@@ -35,18 +35,17 @@
                 <h6>David Patterson <span class="text-muted"> - New Inquiries, Applications and Questions </span></h6>
                 <p>
                     
-                    Email: david@pumpkinhomes.ca
+                    Email: <a href="mailto:david@pumpkinhomes.ca" class="text-decoration-none">david@pumpkinhomes.ca</a> 
                     <br>
                     Phone: (647) 848-1668 EXT 1
                 </p>
                 <h6>Raquel Patterson <span class="text-muted"> - Administration, Rent and Payments</span></h6>
-                <p>
-                    Email: dgpatters@hotmail.ca
+                <p>Email: <a href="mailto:dgpatters@hotmail.ca" class="text-decoration-none">dgpatters@hotmail.ca</a>
                 </p>
                 <button class="btn btn-success text-white" data-bs-target="#contact-modal" data-bs-toggle="modal">Contact Us Now</button>
             </div>     
             
-            <div class="col-lg-3 cold-md-6 py-4">
+            <div class="col-lg-3 col-md-6 py-4">
                 <h5 class="text-white">Follow Us</h5>
                 <a href="https://www.facebook.com/PumpkinHomes" class="text-primary" target="_blank">
                     <i class="fab fa-facebook-square fa-2x" ></i>
