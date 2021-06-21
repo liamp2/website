@@ -134,7 +134,7 @@
             <div class="row">
                 <div class="col-md-6 d-flex flex-column" id="accordion1">
                     <div class="card order-1">
-                        <a href="#collapse1" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion1">
+                        <a href="#collapse1" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion1">
                             <h5 class="mb-0">
                                 How much of an initial deposit is required?
                             </h5>
@@ -147,7 +147,7 @@
                     </div>
 
                     <div class="card order-3">
-                        <a href="#collapse2" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion1">
+                        <a href="#collapse2" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion1">
                             <h5 class="mb-0">
                                 How is my monthly rent set and how is it applied to the eventual down payment?
                             </h5>
@@ -160,7 +160,7 @@
                     </div>
 
                     <div class="card  order-4">
-                        <a href="#collapse3" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion1">
+                        <a href="#collapse3" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion1">
                             <h5 class="mb-0">
                                 How much will I save for the final down payment?
                             </h5>
@@ -173,7 +173,7 @@
                     </div>
 
                     <div class="card order-5">
-                        <a href="#collapse4" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion2">
+                        <a href="#collapse4" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion2">
                             <h5 class="mb-0">
                                 What is the typical rental period?
                             </h5>
@@ -186,7 +186,7 @@
                     </div>
 
                     <div class="card order-6">
-                        <a href="#collapse5" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion2">
+                        <a href="#collapse5" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion2">
                             <h5 class="mb-0">
                                 Can I make changes to the house and property during the rental period?
                             </h5>
@@ -199,7 +199,7 @@
                     </div>
 
                     <div class="card order-7">
-                        <a href="#collapse6" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion2">
+                        <a href="#collapse6" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion2">
                             <h5 class="mb-0">
                                 Could you help us stay in our existing home versus having to sell it to clear debts?
                             </h5>
@@ -212,7 +212,7 @@
                     </div>
 
                     <div class="card order-8">
-                        <a href="#collapse7" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion2">
+                        <a href="#collapse7" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion2">
                             <h5 class="mb-0">
                                 Why do you focus in Barrie, Simcoe County and northern York Region?
                             </h5>
@@ -233,7 +233,7 @@
                 <div class="col-md-6 d-flex flex-column" id="accordion2">
 
                     <div class="card order-1">
-                        <a href="#collapse8" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion2">
+                        <a href="#collapse8" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion2">
                             <h5 class="mb-0">
                                 What personal information is needed and who will this be shared with?
                             </h5>
@@ -246,7 +246,7 @@
                     </div>
 
                     <div class="card order-2">
-                        <a href="#collapse9" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion2">
+                        <a href="#collapse9" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion2">
                             <h5 class="mb-0">
                                 Who pays for the home inspection and appraisal?
                             </h5>
@@ -259,7 +259,7 @@
                     </div>
 
                     <div class="card order-3">
-                        <a href="#collapse10" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion1">
+                        <a href="#collapse10" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion1">
                             <h5 class="mb-0">
                                 Who pays for property taxes?
                             </h5>
@@ -272,7 +272,7 @@
                     </div>
 
                     <div class="card order-4">
-                        <a href="#collapse11" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion1">
+                        <a href="#collapse11" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion1">
                             <h5 class="mb-0">
                                 Who pays for utilities and general upkeep?
                             </h5>
@@ -285,7 +285,7 @@
                     </div>
 
                     <div class="card order-5">
-                        <a href="#collapse12" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion1">
+                        <a href="#collapse12" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion1">
                             <h5 class="mb-0">
                                 Who pays for maintenance and large repairs?
                             </h5>
@@ -298,7 +298,7 @@
                     </div>
 
                     <div class="card order-6">
-                        <a href="#collapse13" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion1">
+                        <a href="#collapse13" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion1">
                             <h5 class="mb-0">
                                 Who pays for house insurance?
                             </h5>
@@ -311,7 +311,7 @@
                     </div>
 
                     <div class="card order-7">
-                        <a href="#collapse14" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion1">
+                        <a href="#collapse14" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion1">
                             <h5 class="mb-0">
                                 How do I improve my credit rating during the rental term?
                             </h5>
@@ -324,7 +324,7 @@
                     </div>
 
                     <div class="card order-8">
-                        <a href="#collapse15" class="card-header" data-bs-toggle="collapse" data-bs-parent="#accordion2">
+                        <a href="#collapse15" class="card-header text-decoration-none" data-bs-toggle="collapse" data-bs-parent="#accordion2">
                             <h5 class="mb-0">
                                 What happens if I change my mind?
                             </h5>

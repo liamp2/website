@@ -29,7 +29,7 @@
                     </ul>
                     
                     <div class="d-grid gap-2 my-3">
-                        <a  href="#contactForm" class="btn btn-primary text-white">Contact Us</a>
+                        <a  href="#contactForm" class="btn btn-primary text-white" data-bs-target="#contact-modal" data-bs-toggle="modal">Contact Us</a>
                     </div>
                 </div>
 
@@ -147,7 +147,7 @@
                 </div>
                 <div class="col-lg-5">            
                     <div class="testimonial-header mb-3">
-                        <h5 class="text-primary text-center pb-3">Hear From Our Satisfied Partners!</h5>
+                        <h5 class="text-primary text-center py-3">Hear From Our Satisfied Partners!</h5>
                     </div>
                     <div class="testimonial-slider">
                         <div>
