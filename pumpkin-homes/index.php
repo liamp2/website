@@ -41,14 +41,14 @@
                 <div class="col-md-6 mb-3">
                     <div class="card text-center">
                         <div class="card-header">
-                            <h6>Were you denied a mortage for any of the following reasons:</h6>
+                            <h6>Were you <strong class="text-primary">DENIED</strong> a mortage for any of the following reasons:</h6>
                         </div>
                         <div class="card-body">
                             <ul class="list-group-flush">
-                                <li class="list-group-item">Low Down Payment <i class="fas fa-question"></i></li>
-                                <li class="list-group-item">Consumer proposal or bankruptcy <i class="fas fa-question"></i></li>
-                                <li class="list-group-item">Poor or damaged credit <i class="fas fa-question"></i></li>
-                                <li class="list-group-item">Self employed with low reported income <i class="fas fa-question"></i></li>
+                                <li class="list-group-item">Low Down Payment?</li>
+                                <li class="list-group-item">Consumer proposal or bankruptcy?</li>
+                                <li class="list-group-item">Poor or damaged credit?</li>
+                                <li class="list-group-item">Self employed with low reported income?</li>
                             </ul>
                         </div>
                     </div>
@@ -56,14 +56,14 @@
                 <div class="col-md-6 mb-3">
                     <div class="card text-center">
                         <div class="card-header">
-                            <h6>Do you face any of these challenges:</h6>
+                            <h6>Do you face any of these <strong class="text-primary">CHALLENGES:</strong></h6>
                         </div>
                         <div class="card-body">
                             <ul class="list-group-flush">
-                                <li class="list-group-item">Recently divorces or separated <i class="fas fa-question"></i></li>
-                                <li class="list-group-item">Moving and only one spouse has a job <i class="fas fa-question"></i></li>
-                                <li class="list-group-item">New immigrant with no credit history <i class="fas fa-question"></i></li>
-                                <li class="list-group-item">Denied refinancing for your home <i class="fas fa-question"></i></li>
+                                <li class="list-group-item">Recently divorces or separated?</li>
+                                <li class="list-group-item">Moving and only one spouse has a job?</li>
+                                <li class="list-group-item">New immigrant with no credit history?</li>
+                                <li class="list-group-item">Denied refinancing for your home?</li>
                             </ul>
                         </div>
                     </div>
@@ -71,13 +71,13 @@
                 <div class="col-md-12">
                     <div class="card text-center">
                         <div class="card-header">
-                            <h6>If you answer yes to any of the above, we <strong>CAN</strong> help!</h6>
+                            <h6>If you answer yes to any of the above, we <strong class="text-primary">CAN</strong> help!</h6>
                         </div>
                         <div class="card-body">
                             <ul class="list-group-flush">
-                                <li class="list-group-item">We help families <strong>MOVE</strong> from being renters to being owners</li>
-                                <li class="list-group-item">We help families <strong>CHOOSE</strong> and purchase a new home</li>
-                                <li class="list-group-item">We help families <strong>KEEP</strong> their home, if you cannot refinance on your own</li>
+                                <li class="list-group-item">We help families <strong class="text-primary">MOVE</strong> from being renters to being owners</li>
+                                <li class="list-group-item">We help families <strong class="text-primary">CHOOSE</strong> and purchase a new home</li>
+                                <li class="list-group-item">We help families <strong class="text-primary">KEEP</strong> their home, if you cannot refinance on your own</li>
                             </ul>
                         </div>
                     </div>
