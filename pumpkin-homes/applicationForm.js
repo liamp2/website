@@ -19,6 +19,7 @@ formApp.controller('contactFormController', ['$scope', function($scope){
             //window.open('formSubmit.php');
 
         });
+        $('#contact-modal').modal('hide');
         
     }
 }]);
@@ -89,6 +90,6 @@ formApp.controller('formController', ['$scope', function($scope){
             //window.open('formSubmit.php');
 
         });
-        
+        $('#application-modal').modal('hide');
     }
 }]);
