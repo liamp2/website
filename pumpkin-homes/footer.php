@@ -142,9 +142,14 @@
             <div class="form-group input-group mb-3">
                 <label for="phone-number" class="input-group-text">
                     Phone Number <span class="text-danger"> &nbsp;*</span>  
-                    </label>
-                <input type="telNo" class="form-control" placeholder="123-456-7890" 
+                </label>
+                <!-- <div class="form-control"> -->
+                    <!-- <phonenumber-directive placeholder="'(123) 456-7890'" model='form.phonenumber'></phonenumber-directive> -->
+                <!-- </div> -->
+                
+                <input type="telNo" id="phoneNumberInput" class="form-control" placeholder="123 456-7890" 
                     name="phoneNumber" 
+                    ng-change="formatPhoneNumber()"
                     ng-class="{'is-invalid': (applicationForm.phoneNumber.$touched && applicationForm.phoneNumber.$invalid)}"
                     ng-model="form.phoneNumber" required>
                 <div class="invalid-feedback">
@@ -228,8 +233,8 @@
                 <label class="input-group-text">
                     What value of home are you looking at? <span class="text-danger"> &nbsp;*</span>  
                 </label>
-                <input type="integer" class="form-control" placeholder="$" 
-                    name="homeValue"
+                <input type="integer" class="form-control" placeholder="$ 500,000" 
+                    id="homeValue"
                     ng-class="{'is-invalid': (applicationForm.homeValue.$touched && applicationForm.homeValue.$invalid)}"
                     ng-model="form.homeValue" required>
                 <div class="invalid-feedback">
@@ -255,8 +260,9 @@
                 <label class="input-group-text">
                     What is your houselhold gross annual income? <span class="text-danger"> &nbsp;*</span>  
                 </label>
-                <input type="number" class="form-control" min="0" max="10000000" placeholder="$" 
+                <input type="integer" class="form-control" placeholder="$ 50,000" 
                     name="grossIncome"
+                    id="annualIncome"
                     ng-class="{'is-invalid': (applicationForm.grossIncome.$touched && applicationForm.grossIncome.$invalid)}"
                     ng-model="form.grossIncome" required>
                 <div class="invalid-feedback">
@@ -269,8 +275,9 @@
                 <label class="input-group-text">
                     What amount of down payment can you afford? <span class="text-danger"> &nbsp;*</span>  
                 </label>
-                <input type="number" class="form-control" min="0" max="10000000" placeholder="$" 
+                <input type="integer" class="form-control" placeholder="$ 25,000" 
                     name="downPayment" 
+                    id="downPayment"
                     ng-class="{'is-invalid': (applicationForm.downPayment.$touched && applicationForm.downPayment.$invalid)}"
                     ng-model="form.downPayment">
                 <div class="invalid-feedback">
@@ -337,22 +344,117 @@
         </div>
         <div class="modal-footer ">
             <div class="input-group d-grid">
-                <button class="btn btn-primary text-white" type="submit" ng-disabled="applicationForm.$invalid">Submit</button>
+                <!-- <button class="btn btn-primary text-white" type="submit" ng-disabled="applicationForm.$invalid">Submit</button> -->
+                <button class="btn btn-primary text-white" type="submit" >Submit</button>
             </div>
         </div>
         </div>
     </div>
 </div>
 
- <!-- JQUERY -->
- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <!--SLICK SLIDE  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
+<!-- Input Mask  -->
+
 
 <script>
     //get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+
+    
+    $('#homeValue').keyup(function(e) { 
+        formatDollarValue(e);
+    });
+
+    $('#annualIncome').keyup(function(e) {
+        formatDollarValue(e);
+    });
+
+    $('#downPayment').keyup(function(e) {
+        formatDollarValue(e);
+    });
+
+
+    function formatDollarValue(e){
+        
+        var moneyString = e.target.value.replace(/\D/g, '').substring(0,14);
+        // var reverseString = moneyString.split("").reverse().join("");
+        
+        // console.log("input str: " + moneyString);
+        var len = moneyString.length;
+        var ret = "$ ";
+        
+        
+        
+        
+        //console.log("length: " + len.toString());
+        
+        if(len> 3){
+            ret += moneyString.substr(0, len%3);
+            moneyString = moneyString.substr(len%3,);
+            var charSegments = moneyString.match(/.{1,3}/g);
+            // console.log(charSegments);
+            // console.log("ret: " + ret);
+            // console.log("moneyString remaining: " + moneyString);
+
+            for(i = 0; i < charSegments.length; i ++){
+                ret += ((ret == "$ ") ? "" : ",")  + charSegments[i];                
+            }
+        } else {
+            ret = "$ " + moneyString;
+        }
+        
+        // console.log("ret: " + ret);
+        
+
+
+        var deleteKey = (e.keyCode == 8 || e.keyCode == 46);
+
+        
+        // // 
+        // if(len == 0){
+        //     moneyString = moneyString;
+        // } else if (len <= 3){
+        //     moneyString = "$ " +  moneyString;
+        // } else if (len > 3 ){
+        //     moneyString = "$ " +  moneyString;
+        // }
+
+
+        e.target.value = ret;
+    }
+
+
+    $('#phoneNumberInput').keyup(function(e) {
+        // console.log("beginning of function");
+        // console.log(this.value);
+        // var ph = this.value.replace(/^[^\+\d]?/g, '');
+        // var longDistance = ph.search(/\+/g);
+        // console.log("start of string: ");
+        // console.log(longDistance);
+        // this.value = longDistance;
+        var ph = this.value.replace(/\D/g,'').substring(0,10);
+        console.log(ph);
+        // Backspace and Delete keysup
+        var deleteKey = (e.keyCode == 8 || e.keyCode == 46);
+        var len = ph.length;
+        if(len == 0) {
+            ph = ph;
+        } else if(len < 3){
+            ph = '(' + ph;
+        } else if(len == 3){
+            ph = '(' + ph + (deleteKey ? '' : ') ');
+        } else if(len < 6){
+            ph = '(' + ph.substring(0,3) + ') ' + ph.substring(3,6);
+        } else if(len == 6){
+            ph = '(' + ph.substring(0,3) + ') ' + ph.substring(3,6) + (deleteKey ? '' : '-');
+        } else {
+            ph = '(' + ph.substring(0,3) + ') ' + ph.substring(3,6) + '-' + ph.substring(6,10);
+        }
+        this.value = ph;
+    });
 </script>
