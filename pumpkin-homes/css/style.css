@@ -3,6 +3,10 @@
   opacity: 0.5;
   background: white; }
 
+.carousel-item{
+  height: 450px;
+}
+
 .carousel-image1 {
   background: url("../img/carousel1.jpg");
   background-size: cover;

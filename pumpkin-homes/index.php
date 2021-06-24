@@ -3,7 +3,7 @@
     <?php include 'navbar.php' ?>
 
     <!-- SHOWCASE SLIDER -->
-    <section id="showcase">
+    <!-- <section id="showcase">
         <div class="container">
             <div class="main-carousel">
                 <div class="container">
@@ -32,6 +32,16 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    <section id="showcase">
+        <!-- <div class="container"> -->
+            <div class="main-carousel">
+                <div class="carousel-item carousel-image1 active">
+                    
+                </div>
+
+            </div>
+        <!-- </div> -->
     </section>
 
     <!-- INFORMATION -->
