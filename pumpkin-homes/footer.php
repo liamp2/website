@@ -62,44 +62,70 @@
         </div>
 
     </div>
+</footer>
 
-    
-    <!-- CONTACT MODAL -->
-    <div id="contact-modal" class="modal text-primary">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-primary">Contact Us Now</h5>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
+<!-- CONTACT MODAL -->
+<div id="contact-modal" class="modal text-primary" ng-controller="contactFormController">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-primary">Contact Us Now</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
 
-                <div class="modal-body" >
-                    <form id="contactForm" action="">
-                        <div class="input-group mb-2">
-                            <span class="input-group-text"><i class="fas fa-user form-icon"></i></span>
-                            <input type="name" class="form-control" placeholder="Name">
+            <div class="modal-body" >
+                <form id="contactForm" name="contactForm" ng-init="initForm()">
+                    <div class="input-group mb-2">
+                        <span class="input-group-text"><i class="fas fa-user form-icon"></i></span>
+                        <input type="name" class="form-control" placeholder="Name"
+                            name="name"
+                            ng-model="form.name"
+                            ng-class="{'is-invalid': (contactForm.name.$touched && contactForm.name.$invalid)}" required>
+                        <div class="invalid-feedback">
+                            Please enter your name.
                         </div>
-                        <div class="input-group mb-2">
-                            <span class="input-group-text"><i class="fas fa-at"></i></span>
-                            <input type="email" class="form-control" placeholder="Email">
+                    </div>
+
+                    <div class="input-group mb-2">
+                        <span class="input-group-text"><i class="fas fa-at"></i></span>
+                        <input type="email" class="form-control" placeholder="Email"
+                            name="email"
+                            ng-model="form.email"
+                            ng-class="{'is-invalid': (contactForm.email.$touched && contactForm.email.$invalid)}" required>
+                        <div class="invalid-feedback">
+                            Please enter your email.
                         </div>
-                        <div class="input-group mb-2">
-                            <span class="input-group-text"><i class="fas fa-pencil-alt"></i></span>
-                            <input type="Subject" class="form-control" placeholder="Subject">
+                    </div>
+
+                    <div class="input-group mb-2">
+                        <span class="input-group-text"><i class="fas fa-pencil-alt"></i></span>
+                        <input type="Subject" class="form-control" placeholder="Subject"
+                            name="subject"
+                            ng-model="form.subject"
+                            ng-class="{'is-invalid': (contactForm.subject.$touched && contactForm.subject.$invalid)}" required>
+                        <div class="invalid-feedback">
+                            Please enter a brief subject.
                         </div>
-                        <div class="input-group mb-2">
-                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>    
-                        </div>
-                        <div class="input-group d-grid mb-2">
-                            <button type="submit" class="btn btn-success text-white">Submit</button>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                        <textarea class="form-control" rows="5" placeholder="Message"
+                            name="message"
+                            ng-model="form.message"
+                            ng-class="{'is-invalid': (contactForm.message.$touched && contactForm.message.$invalid)}" required>
+                        </textarea>   
+                        <div class="invalid-feedback">
+                            Please enter a message.
+                        </div> 
+                    </div>
+                    <div class="input-group d-grid mb-2">
+                        <button type="submit" class="btn btn-success text-white" id="contactForm" ng-disabled="contactForm.$invalid" ng-click="submitContactForm()">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-</footer>
+</div>
 
 
 <!-- APPLICATION MODAL -->
@@ -357,7 +383,7 @@
         <div class="modal-footer ">
             <div class="input-group d-grid">
                 <!-- <button class="btn btn-primary text-white" type="submit" ng-disabled="applicationForm.$invalid" ng-click="formSubmit(form)">Submit</button> -->
-                <button class="btn btn-primary text-white" type="submit" id="applicationForm"   ng-click="formSubmit(form)">Submit</button>
+                <button class="btn btn-primary text-white" type="submit" id="applicationForm"   ng-click="submitApplication(form)">Submit</button>
             </div>
         </div>
         </div>

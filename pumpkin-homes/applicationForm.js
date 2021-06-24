@@ -1,5 +1,27 @@
 var formApp = angular.module('formApp', []);
 
+formApp.controller('contactFormController', ['$scope', function($scope){
+    $scope.initForm = function() {
+        console.log("contact form init");
+    }
+
+    $scope.submitContactForm = function(){
+        console.log($scope.form);
+        var encoded = JSON.stringify($scope.form);
+         console.log(encoded);
+
+        console.log(JSON.parse(encoded));
+        $.post('formSubmit.php', {data: encoded}, function(data){
+            console.log("posted contact");
+            // console.log(data);
+            var win = window.open("", "Title", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=780,height=200,top="+(screen.height-400)+",left="+(screen.width-840));
+            win.document.body.innerHTML = data;
+            //window.open('formSubmit.php');
+
+        });
+        
+    }
+}]);
 
 formApp.controller('formController', ['$scope', function($scope){
 
@@ -54,14 +76,7 @@ formApp.controller('formController', ['$scope', function($scope){
     });
 
 
-    $scope.formSubmit = function(){
-        
-        // console.log($scope.form);
-        // var formData = $scope.form;
-        // $.post('formSubmit.php', {applicantName: 'hello world'}, function(data){
-        //     console.log("posted");
-        //     window.open('formSubmit.php');
-        // });
+    $scope.submitApplication = function(){
         var encoded = JSON.stringify($scope.form);
         // console.log(encoded);
 
