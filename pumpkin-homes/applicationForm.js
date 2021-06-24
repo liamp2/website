@@ -3,25 +3,24 @@ var formApp = angular.module('formApp', []);
 
 formApp.controller('formController', ['$scope', function($scope){
 
-
-    console.log("liam");
-    console.log("localhosts");
-    //console.log($scope);
     $scope.initForm = function(){
         console.log("initform");
         $scope.form = {
+            applicantName: "",
+            coApplicantName: "",
+            email: "",
             phoneNumber: "",
             homeValue: "",
             grossIncome: "",
             downPayment: "",
-            creditRating: null,
         };
+
         $scope.dollarRegex = '\\$[0-9]{1,3}\\,?([0-9]{3}\\,?)*';
         $scope.phoneRegex = '\\([0-9]{3}\\) [0-9]{3}-[0-9]{4}';
         //$scope.applicationForm.phoneNumber.$setValidity("ho", true);
         
-        console.log($scope.form);
-        console.log($scope.applicationForm);
+        // console.log($scope.form);
+        // console.log($scope.applicationForm);
     }
    
     $('#phoneNumberInput').on('keyup change', function(e) {
@@ -33,7 +32,7 @@ formApp.controller('formController', ['$scope', function($scope){
         // console.log(longDistance);
         // this.value = longDistance;
         var ph = this.value.replace(/\D/g,'').substring(0,10);
-        console.log(ph);
+        // console.log(ph);
         // Backspace and Delete keysup
         var deleteKey = (e.keyCode == 8 || e.keyCode == 46);
         var len = ph.length;
@@ -50,41 +49,31 @@ formApp.controller('formController', ['$scope', function($scope){
         } else {
             ph = '(' + ph.substring(0,3) + ') ' + ph.substring(3,6) + '-' + ph.substring(6,10);
         }
-        console.log(ph);
+        //console.log(ph);
         e.target.value = ph;
     });
 
-    // $scope.validatePhoneNumber = function() {
-    //     // console.log("validate");
-    //     // console.log($scope.form.phoneNumber)
-    //     var valid = $scope.form.phoneNumber.search(/\([0-9]{3}\) [0-9]{3}-[0-9]{4}/) === 0;
-    //     $scope.applicationForm.phoneNumber.$setValidity('phone number is not proper format', valid);
-    // }
-
-    // $scope.changePhoneNumber = function() {
-    //     // console.log($scope);
-    //     if($scope.applicationForm.phoneNumber.$dirty){
-    //         var valid = $scope.form.phoneNumber.search(/\([0-9]{3}\) [0-9]{3}-[0-9]{4}/) === 0;
-    //         $scope.applicationForm.phoneNumber.$setValidity('phone number is not proper format', valid);
-    //     }
-    // }
-
-    // $scope.validateDollarValue = function(dataValue, applicationFormField) {
-    //     console.log(applicationFormField);
-    //     console.log(dataValue);
-    //     var valid = dataValue.toString().search(/\$[0-9]{1,3}\,?([0-9]{3}\,?)*/) === 0;
-    //     console.log(valid);
-    //     applicationFormField.$setValidity("error", valid);
-    //     // /$scope.applicationForm.phoneNumber.$setValidity('phone number is not proper format', valid);
-    // }
-
-    // $scope.changeDollarValue = function(dataValue) {
-    //     console.log(dataValue);
-    // }
 
     $scope.formSubmit = function(){
         
-        console.log($scope.form);
+        // console.log($scope.form);
+        // var formData = $scope.form;
+        // $.post('formSubmit.php', {applicantName: 'hello world'}, function(data){
+        //     console.log("posted");
+        //     window.open('formSubmit.php');
+        // });
+        var encoded = JSON.stringify($scope.form);
+        // console.log(encoded);
+
+        // console.log(JSON.parse(encoded));
+        $.post('formSubmit.php', {data: encoded}, function(data){
+            console.log("posted");
+            // console.log(data);
+            var win = window.open("", "Title", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=780,height=200,top="+(screen.height-400)+",left="+(screen.width-840));
+            win.document.body.innerHTML = data;
+            //window.open('formSubmit.php');
+
+        });
         
     }
 }]);
