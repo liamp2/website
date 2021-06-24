@@ -241,17 +241,12 @@
                 <label class="input-group-text">
                     What value of home are you looking at? <span class="text-danger"> &nbsp;*</span>  
                 </label>
-                <input type="integer" class="form-control" placeholder="$500,000" 
+                <input type="integer" class="form-control" placeholder="$500,000"
+                    name="homeValue"
                     id="homeValue"
                     ng-pattern='dollarRegex'
                     ng-class="{'is-invalid': (applicationForm.homeValue.$touched && applicationForm.homeValue.$invalid)}"
                     ng-model="form.homeValue" required>
-                <!-- <input type="integer" class="form-control" placeholder="$500,000" 
-                    id="homeValue"
-                    ng-change="changeDollarValue(form.homeValue)"
-                    ng-blur="validateDollarValue(form.homeValue, applicationForm.homeValue)"
-                    ng-class="{'is-invalid': (applicationForm.homeValue.$touched && applicationForm.homeValue.$invalid)}"
-                    ng-model="form.homeValue" required> -->
                 <div class="invalid-feedback">
                     Desired home value is invalid!
                 </div>
@@ -277,7 +272,7 @@
                 </label>
                 <input type="integer" class="form-control" placeholder="$50,000" 
                     name="grossIncome"
-                    id="annualIncome"
+                    id="grossIncome"
                     ng-pattern='dollarRegex'
                     ng-class="{'is-invalid': (applicationForm.grossIncome.$touched && applicationForm.grossIncome.$invalid)}"
                     ng-model="form.grossIncome" required>
@@ -285,7 +280,7 @@
                     Annual household gross income is invalid!
                 </div>
             </div>
-
+            
 
             <div class="form-group input-group mb-3">
                 <label class="input-group-text">
@@ -296,7 +291,7 @@
                     id="downPayment"
                     ng-pattern='dollarRegex'
                     ng-class="{'is-invalid': (applicationForm.downPayment.$touched && applicationForm.downPayment.$invalid)}"
-                    ng-model="form.downPayment">
+                    ng-model="form.downPayment" required>
                 <div class="invalid-feedback">
                     Downpayment value is invalid!
                 </div>
@@ -361,8 +356,8 @@
         </div>
         <div class="modal-footer ">
             <div class="input-group d-grid">
-                <button class="btn btn-primary text-white" type="submit" ng-disabled="applicationForm.$invalid" ng-click="formSubmit(form)">Submit</button>
-                <!-- <button class="btn btn-primary text-white" type="submit" id="applicationForm"   ng-click="formSubmit(form)">Submit</button> -->
+                <!-- <button class="btn btn-primary text-white" type="submit" ng-disabled="applicationForm.$invalid" ng-click="formSubmit(form)">Submit</button> -->
+                <button class="btn btn-primary text-white" type="submit" id="applicationForm"   ng-click="formSubmit(form)">Submit</button>
             </div>
         </div>
         </div>
@@ -382,12 +377,11 @@
     //get the current year for the copyright
     $('#year').text(new Date().getFullYear());
 
-    
     $('#homeValue').on('keyup change', function(e) { 
         formatDollarValue(e);
-    });
+    });  
 
-    $('#annualIncome').on('keyup change', function(e) {
+    $('#grossIncome').on('keyup change', function(e) {
         formatDollarValue(e);
     });
 
@@ -414,6 +408,7 @@
             ret += moneyString;
         }
         // var deleteKey = (e.keyCode == 8 || e.keyCode == 46);
+        console.log(ret);
         e.target.value = ret;
     }
 
