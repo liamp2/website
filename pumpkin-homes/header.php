@@ -9,6 +9,7 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    
     <!-- SLICK SLIDE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
@@ -18,6 +19,9 @@
     <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.8.2/angular-messages.min.js"></script>
     <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
+    
+    
     <script src="applicationForm.js"></script>
+    
     <title>Pumpkin Homes</title>
 </head>
