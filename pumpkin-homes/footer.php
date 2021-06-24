@@ -56,7 +56,6 @@
                 <div class="col py-3">
                     <p class="text-muted">&copy; <span id="year"></span> Pumpkin Homes</p>
                 </div>
-
             </div>
 
         </div>
@@ -121,12 +120,35 @@
                     <div class="input-group d-grid mb-2">
                         <button type="submit" class="btn btn-success text-white" id="contactForm" ng-disabled="contactForm.$invalid" ng-click="submitContactForm()">Submit</button>
                     </div>
+                    <div class="my-3">
+                        <span>{{submissionStatus}}</span>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
 
+<div class="modal" id="success-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="text-success">Submitted Successfully</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="error-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="text-danger">There was an error! Try again or contact us directly at david@pumpkinhomes.ca </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- APPLICATION MODAL -->
 <div class="modal" id="application-modal" ng-controller="formController">
@@ -390,6 +412,7 @@
     </div>
 </div>
 
+
 <!-- JQUERY -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <!-- JavaScript Bundle with Popper -->
@@ -399,7 +422,21 @@
 <!-- Input Mask  -->
 
 
+
 <script>
+    
+    // document.getElementById("#toastBtn").onclick = function(){
+    //     console.log("toast");
+    //     var toastElList = [].slice.call(document.querySelectorAll('.toast'));
+    //     var toastList = toastElList.map(function (toastEl) {
+    //         return new bootstrap.Toast(toastElList, {})
+    //     });
+    //     toastList.forEach(toast => toast.show());
+    //     console.log(toastList);
+        
+    //     // var bsAlert = new boostrap.Toast($('#success-toast'));
+    //     // bsAlert.show();
+    // };
     //get the current year for the copyright
     $('#year').text(new Date().getFullYear());
 
