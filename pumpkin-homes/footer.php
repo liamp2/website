@@ -112,7 +112,8 @@
         </div>
 
         <div class="modal-body">
-            <form name="applicationForm" action="<?php $_PHP_SELF ?>" method="POST">
+            <form name="applicationForm" ng-init="initForm()">
+            <!-- <form name="applicationForm" action="formSubmit.php" method="POST"> -->
             <div class="mb-3">
                 <span class="text-danger">* Indicates a Required Field</span> 
             </div>
@@ -143,15 +144,22 @@
                 <label for="phone-number" class="input-group-text">
                     Phone Number <span class="text-danger"> &nbsp;*</span>  
                 </label>
-                <!-- <div class="form-control"> -->
-                    <!-- <phonenumber-directive placeholder="'(123) 456-7890'" model='form.phonenumber'></phonenumber-directive> -->
-                <!-- </div> -->
                 
-                <input type="telNo" id="phoneNumberInput" class="form-control" placeholder="123 456-7890" 
+                <!-- <input type="telNo" class="form-control" placeholder="(123) 456-7890" 
                     name="phoneNumber" 
-                    ng-change="formatPhoneNumber()"
+                    id="phoneNumberInput" 
+                    ng-change="changePhoneNumber()"
+                    ng-blur="validatePhoneNumber()"
+                    ng-class="{'is-invalid': (applicationForm.phoneNumber.$touched && applicationForm.phoneNumber.$invalid)}"
+                    ng-model="form.phoneNumber" required> -->
+                    <input type="telNo" class="form-control" placeholder="(123) 456-7890" 
+                    name="phoneNumber" 
+                    id="phoneNumberInput" 
+                    ng-pattern="phoneRegex"
+                    ng-change="changePhoneNumber()"
                     ng-class="{'is-invalid': (applicationForm.phoneNumber.$touched && applicationForm.phoneNumber.$invalid)}"
                     ng-model="form.phoneNumber" required>
+                    
                 <div class="invalid-feedback">
                     Phone number is invalid!
                 </div>
@@ -233,10 +241,17 @@
                 <label class="input-group-text">
                     What value of home are you looking at? <span class="text-danger"> &nbsp;*</span>  
                 </label>
-                <input type="integer" class="form-control" placeholder="$ 500,000" 
+                <input type="integer" class="form-control" placeholder="$500,000" 
                     id="homeValue"
+                    ng-pattern='dollarRegex'
                     ng-class="{'is-invalid': (applicationForm.homeValue.$touched && applicationForm.homeValue.$invalid)}"
                     ng-model="form.homeValue" required>
+                <!-- <input type="integer" class="form-control" placeholder="$500,000" 
+                    id="homeValue"
+                    ng-change="changeDollarValue(form.homeValue)"
+                    ng-blur="validateDollarValue(form.homeValue, applicationForm.homeValue)"
+                    ng-class="{'is-invalid': (applicationForm.homeValue.$touched && applicationForm.homeValue.$invalid)}"
+                    ng-model="form.homeValue" required> -->
                 <div class="invalid-feedback">
                     Desired home value is invalid!
                 </div>
@@ -260,9 +275,10 @@
                 <label class="input-group-text">
                     What is your houselhold gross annual income? <span class="text-danger"> &nbsp;*</span>  
                 </label>
-                <input type="integer" class="form-control" placeholder="$ 50,000" 
+                <input type="integer" class="form-control" placeholder="$50,000" 
                     name="grossIncome"
                     id="annualIncome"
+                    ng-pattern='dollarRegex'
                     ng-class="{'is-invalid': (applicationForm.grossIncome.$touched && applicationForm.grossIncome.$invalid)}"
                     ng-model="form.grossIncome" required>
                 <div class="invalid-feedback">
@@ -275,9 +291,10 @@
                 <label class="input-group-text">
                     What amount of down payment can you afford? <span class="text-danger"> &nbsp;*</span>  
                 </label>
-                <input type="integer" class="form-control" placeholder="$ 25,000" 
+                <input type="integer" class="form-control" placeholder="$25,000" 
                     name="downPayment" 
                     id="downPayment"
+                    ng-pattern='dollarRegex'
                     ng-class="{'is-invalid': (applicationForm.downPayment.$touched && applicationForm.downPayment.$invalid)}"
                     ng-model="form.downPayment">
                 <div class="invalid-feedback">
@@ -344,8 +361,8 @@
         </div>
         <div class="modal-footer ">
             <div class="input-group d-grid">
-                <!-- <button class="btn btn-primary text-white" type="submit" ng-disabled="applicationForm.$invalid">Submit</button> -->
-                <button class="btn btn-primary text-white" type="submit" >Submit</button>
+                <button class="btn btn-primary text-white" type="submit" ng-disabled="applicationForm.$invalid" ng-click="formSubmit(form)">Submit</button>
+                <!-- <button class="btn btn-primary text-white" type="submit" id="applicationForm"   ng-click="formSubmit(form)">Submit</button> -->
             </div>
         </div>
         </div>
@@ -366,18 +383,17 @@
     $('#year').text(new Date().getFullYear());
 
     
-    $('#homeValue').keyup(function(e) { 
+    $('#homeValue').on('keyup change', function(e) { 
         formatDollarValue(e);
     });
 
-    $('#annualIncome').keyup(function(e) {
+    $('#annualIncome').on('keyup change', function(e) {
         formatDollarValue(e);
     });
 
-    $('#downPayment').keyup(function(e) {
+    $('#downPayment').on('keyup change', function(e) {
         formatDollarValue(e);
     });
-
 
     function formatDollarValue(e){
         
@@ -386,75 +402,20 @@
         
         // console.log("input str: " + moneyString);
         var len = moneyString.length;
-        var ret = "$ ";
-        
-        
-        
-        
-        //console.log("length: " + len.toString());
-        
+        var ret = "$";
         if(len> 3){
             ret += moneyString.substr(0, len%3);
             moneyString = moneyString.substr(len%3,);
             var charSegments = moneyString.match(/.{1,3}/g);
-            // console.log(charSegments);
-            // console.log("ret: " + ret);
-            // console.log("moneyString remaining: " + moneyString);
-
             for(i = 0; i < charSegments.length; i ++){
-                ret += ((ret == "$ ") ? "" : ",")  + charSegments[i];                
+                ret += ((ret == "$") ? "" : ",")  + charSegments[i];                
             }
         } else {
-            ret = "$ " + moneyString;
+            ret += moneyString;
         }
-        
-        // console.log("ret: " + ret);
-        
-
-
-        var deleteKey = (e.keyCode == 8 || e.keyCode == 46);
-
-        
-        // // 
-        // if(len == 0){
-        //     moneyString = moneyString;
-        // } else if (len <= 3){
-        //     moneyString = "$ " +  moneyString;
-        // } else if (len > 3 ){
-        //     moneyString = "$ " +  moneyString;
-        // }
-
-
+        // var deleteKey = (e.keyCode == 8 || e.keyCode == 46);
         e.target.value = ret;
     }
 
-
-    $('#phoneNumberInput').keyup(function(e) {
-        // console.log("beginning of function");
-        // console.log(this.value);
-        // var ph = this.value.replace(/^[^\+\d]?/g, '');
-        // var longDistance = ph.search(/\+/g);
-        // console.log("start of string: ");
-        // console.log(longDistance);
-        // this.value = longDistance;
-        var ph = this.value.replace(/\D/g,'').substring(0,10);
-        console.log(ph);
-        // Backspace and Delete keysup
-        var deleteKey = (e.keyCode == 8 || e.keyCode == 46);
-        var len = ph.length;
-        if(len == 0) {
-            ph = ph;
-        } else if(len < 3){
-            ph = '(' + ph;
-        } else if(len == 3){
-            ph = '(' + ph + (deleteKey ? '' : ') ');
-        } else if(len < 6){
-            ph = '(' + ph.substring(0,3) + ') ' + ph.substring(3,6);
-        } else if(len == 6){
-            ph = '(' + ph.substring(0,3) + ') ' + ph.substring(3,6) + (deleteKey ? '' : '-');
-        } else {
-            ph = '(' + ph.substring(0,3) + ') ' + ph.substring(3,6) + '-' + ph.substring(6,10);
-        }
-        this.value = ph;
-    });
+    
 </script>
