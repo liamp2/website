@@ -2,46 +2,54 @@
 <body>
     <?php include 'navbar.php' ?>
 
-    <!-- SHOWCASE SLIDER -->
-    <!-- <section id="showcase">
-        <div class="container">
-            <div class="main-carousel">
-                <div class="container">
-                    <img src="img/carousel1.jpg" height="400" width="100%" id="carousel1" class="active">
-                </div>
-                <div class="container">
-                    <img src="img/carousel2.jpg" height="400" width="100%" id="carousel2">
-                </div>
-                <div class="container">
-                    <img src="img/carousel3.jpg" height="400" width="100%" id="carousel3">
-                </div>
-                <div class="container">
-                    <img src="img/carousel4.jpg" height="400" width="100%" id="carousel4">
-                </div>
-                <div class="container">
-                    <img src="img/carousel5.jpg" height="400" width="100%" id="carousel5">
-                </div>
-                <div class="container">
-                    <img src="img/carousel6.jpg" height="400" width="100%" id="carousel6">
-                </div>
-                <div class="container">
-                    <img src="img/carousel7.jpg" height="400" width="100%" id="carousel7">
-                </div>
-                <div class="container">
-                    <img src="img/carousel8.jpg" height="400" width="100%" id="carousel8">
-                </div>
-            </div>
-        </div>
-    </section> -->
+    <!-- SHOWCASE -->
     <section id="showcase">
-        <!-- <div class="container"> -->
-            <div class="main-carousel">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
                 <div class="carousel-item carousel-image1 active">
-                    
-                </div>
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                            <h1 class="display-3">Heading One</h1>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum rerum dignissimos et eveniet deserunt magnam tempora nesciunt, recusandae facere!</p>
+                            <a href="#" class="btn btn-danger btn-lg">Sign Up Now!</a>
 
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image2">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block mb-5">
+                            <h1 class="display-3">Heading Two</h1>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum rerum dignissimos et eveniet deserunt magnam tempora nesciunt, recusandae facere!</p>
+                            <a href="#" class="btn btn-warning btn-lg">Learn More</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image3">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                            <h1 class="display-3">Heading Three</h1>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum rerum dignissimos et eveniet deserunt magnam tempora nesciunt, recusandae facere!</p>
+                            <a href="#" class="btn btn-danger btn-lg">About</a>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-        <!-- </div> -->
+
+            <a href="#myCarousel" data-bs-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#myCarousel" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
     </section>
 
     <!-- INFORMATION -->
