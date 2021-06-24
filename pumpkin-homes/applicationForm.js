@@ -12,15 +12,19 @@ formApp.controller('contactFormController', ['$scope', function($scope){
 
         console.log(JSON.parse(encoded));
         $.post('formSubmit.php', {data: encoded}, function(data){
-            console.log("posted contact");
-            // console.log(data);
-            var win = window.open("", "Title", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=780,height=200,top="+(screen.height-400)+",left="+(screen.width-840));
-            win.document.body.innerHTML = data;
-            //window.open('formSubmit.php');
-
+            console.log(data);
+            if(data == "Success"){
+                //window.alert("Submitted Successfully!")
+                //$scope.submissionStatus = "Submitted Successfully!";
+                $('#contact-modal').modal('hide');
+                $("#success-modal").modal('show');
+                setTimeout(function(){$("#success-modal").modal('hide');}, 1000);
+            } else{
+                $("#error-modal").modal('show');
+                // var win = window.open("", "Title", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=780,height=200,top="+(screen.height-400)+",left="+(screen.width-840));
+                // win.document.body.innerHTML = data;
+            }
         });
-        $('#contact-modal').modal('hide');
-        
     }
 }]);
 
@@ -84,12 +88,16 @@ formApp.controller('formController', ['$scope', function($scope){
         // console.log(JSON.parse(encoded));
         $.post('formSubmit.php', {data: encoded}, function(data){
             console.log("posted");
-            // console.log(data);
-            var win = window.open("", "Title", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=780,height=200,top="+(screen.height-400)+",left="+(screen.width-840));
-            win.document.body.innerHTML = data;
-            //window.open('formSubmit.php');
-
+            if(data == "Success"){
+                
+                $('#application-modal').modal('hide');
+                $("#success-modal").modal('show');
+                setTimeout(function(){$("#success-modal").modal('hide');}, 1000);
+            } else{
+                $("#error-modal").modal('show');
+                // var win = window.open("", "Title", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=780,height=200,top="+(screen.height-400)+",left="+(screen.width-840));
+                // win.document.body.innerHTML = data;
+            }
         });
-        $('#application-modal').modal('hide');
     }
 }]);
