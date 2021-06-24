@@ -11,29 +11,32 @@
                 <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item carousel-image1 active">
+                <div class="carousel-item carousel-wrap active">
+                    <img src="img/welcome.jpg" alt="welcomeImage" class="carousel-bg">
                     <div class="container">
-                        <div class="carousel-caption d-none d-sm-block text-right mb-5">
-                            <h1 class="display-3">Heading One</h1>
+                        <div class="carousel-caption d-none d-sm-block mb-5">
+                            <h1 class="display-3 text-primary">Heading One</h1>
                             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum rerum dignissimos et eveniet deserunt magnam tempora nesciunt, recusandae facere!</p>
                             <a href="#" class="btn btn-danger btn-lg">Sign Up Now!</a>
 
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item carousel-image2">
+                <div class="carousel-item carousel-wrap">
+                    <img src="img/carousel2.jpg" alt="house" class="carousel-bg">
                     <div class="container">
                         <div class="carousel-caption d-none d-sm-block mb-5">
-                            <h1 class="display-3">Heading Two</h1>
+                            <h1 class="display-3 text-primary">Heading Two</h1>
                             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum rerum dignissimos et eveniet deserunt magnam tempora nesciunt, recusandae facere!</p>
                             <a href="#" class="btn btn-warning btn-lg">Learn More</a>
 
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item carousel-image3">
+                <div class="carousel-item carousel-wrap">
+                    <img src="img/carousel3.jpg" alt="house" class="carousel-bg">
                     <div class="container">
-                        <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                        <div class="carousel-caption d-none d-sm-block mb-5">
                             <h1 class="display-3">Heading Three</h1>
                             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum rerum dignissimos et eveniet deserunt magnam tempora nesciunt, recusandae facere!</p>
                             <a href="#" class="btn btn-danger btn-lg">About</a>
