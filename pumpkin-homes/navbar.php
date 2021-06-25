@@ -22,7 +22,7 @@
                 </li>
                 <li class="nav-item">
                     <!-- <a href="apply.php" class="nav-link">Apply Now</a> -->
-                    <a class="nav-link" data-bs-target="#application-modal" data-bs-toggle="modal">Apply Now</a>
+                    <a href="" class="nav-link" data-bs-target="#application-modal" data-bs-toggle="modal">Apply Now</a>
                 </li>
                 <li class="nav-item <?php if($activePage=="partner.php"){echo "active";}?>">
                     <a href="partner.php" class="nav-link <?php if($activePage=="partner.php"){echo "active";}?>">Partners</a>
@@ -34,7 +34,7 @@
 <script>
     window.onscroll = function(e) {
     // print "false" if direction is down and "true" if up
-        (this.oldScroll > this.scrollY) ? $('#navbar').addClass('sticky-top') : $('#navbar').removeClass('sticky-top');
+        (this.oldScroll > this.scrollY) ? $('#navbar').addClass('sticky') : $('#navbar').removeClass('sticky');
         this.oldScroll = this.scrollY;
     }
 </script>

@@ -74,8 +74,9 @@
 
             <div class="modal-body" >
                 <form id="contactForm" name="contactForm" ng-init="initForm()">
+                    <!-- Name -->
                     <div class="input-group mb-2">
-                        <span class="input-group-text"><i class="fas fa-user form-icon"></i></span>
+                        <span class="input-group-text text-primary"><i class="fas fa-user form-icon"></i></span>
                         <input type="name" class="form-control" placeholder="Name"
                             name="name"
                             ng-model="form.name"
@@ -84,9 +85,9 @@
                             Please enter your name.
                         </div>
                     </div>
-
+                    <!-- Email -->
                     <div class="input-group mb-2">
-                        <span class="input-group-text"><i class="fas fa-at"></i></span>
+                        <span class="input-group-text text-primary"><i class="fas fa-at"></i></span>
                         <input type="email" class="form-control" placeholder="Email"
                             name="email"
                             ng-model="form.email"
@@ -95,9 +96,9 @@
                             Please enter your email.
                         </div>
                     </div>
-
+                    <!-- Subject -->
                     <div class="input-group mb-2">
-                        <span class="input-group-text"><i class="fas fa-pencil-alt"></i></span>
+                        <span class="input-group-text text-primary"><i class="fas fa-pencil-alt"></i></span>
                         <input type="Subject" class="form-control" placeholder="Subject"
                             name="subject"
                             ng-model="form.subject"
@@ -106,8 +107,9 @@
                             Please enter a brief subject.
                         </div>
                     </div>
+                    <!-- Message -->
                     <div class="input-group mb-2">
-                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                        <span class="input-group-text text-primary"><i class="fas fa-envelope"></i></span>
                         <textarea class="form-control" rows="5" placeholder="Message"
                             name="message"
                             ng-model="form.message"
@@ -117,11 +119,9 @@
                             Please enter a message.
                         </div> 
                     </div>
+                    <!-- Submit Button -->
                     <div class="input-group d-grid mb-2">
                         <button type="submit" class="btn btn-success text-white" id="contactForm" ng-disabled="contactForm.$invalid" ng-click="submitContactForm()">Submit</button>
-                    </div>
-                    <div class="my-3">
-                        <span>{{submissionStatus}}</span>
                     </div>
                 </form>
             </div>
