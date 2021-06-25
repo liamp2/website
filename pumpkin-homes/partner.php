@@ -195,6 +195,7 @@
             slideToScroll: 1,
             autoplay: true,
             autoplaySpeed: 11500,
+            dots: true,
         });
     </script>
 </body>

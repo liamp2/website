@@ -5,7 +5,7 @@
 
     <!-- SHOWCASE -->
     <section id="showcase">
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
                 <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
@@ -16,9 +16,9 @@
                     <img src="img/welcome.jpg" alt="welcomeImage" class="carousel-bg">
                     <div class="container">
                         <div class="carousel-caption mb-5">
-                            <h1 class="display-3 text-primary">We Can Help You Purchase A Home</h1>
+                            <h1 class="display-3 text-success">We Can Help You Purchase A Home</h1>
                             <p class="lead text-black">Our Rent-To-Own (RTO) program helps people buy a home that they cannot get a mortgage for on their own</p>
-                            <a class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#application-modal">Apply Now!</a>
+                            <a class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#application-modal">Apply Now!</a>
 
                         </div>
                     </div>
@@ -38,9 +38,9 @@
                     <img src="img/carousel3.jpg" alt="house" class="carousel-bg">
                     <div class="container">
                         <div class="carousel-caption mb-5">
-                            <h1 class="display-3 text-primary">Work With Us</h1>
+                            <h1 class="display-3 text-success">Work With Us</h1>
                             <p class="lead text-black">Not looking to buy a house? Want to work with us as an investor, realtor, mortgage broker?</p>
-                            <a href="partner.php" class="btn btn-success btn-lg">Learn More</a>
+                            <a href="partner.php" class="btn btn-primary btn-lg">Learn More</a>
 
                         </div>
                     </div>
@@ -216,6 +216,7 @@
             slideToScroll: 1,
             autoplay: true,
             autoplaySpeed: 11500,
+            dots: true,
         });
     </script>
 </body>
