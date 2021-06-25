@@ -43,20 +43,20 @@
             <h2 class="text-center text-success mb-3">Six Steps to RTO Success</h2>
             <hr class="hr-primary">
             <div class="d-flex align-items-stretch col-lg-4 col-md-6 mb-4 ">
-                <div class="card bg-primary text-white text-center">
-                    <h4 class="card-header bg-transparent p-3">1. Qualification</h4>
+                <div class="card bg-primary text-white">
+                    <h4 class="card-header bg-transparent p-3 text-center">1. Qualification</h4>
                     <div class="card-body Aligner">
                         <div class="Aligner-item">
                             
                             <!-- <h4 class="card-header bg-transparent mb-3">1. Qualification</h4> -->
-                            <p>We realize that you are having difficulty obtaining a mortgage on your own which be caused by a number of situations which do not necessarily reflect your true character or ability to pay. The following criteria will generally be required to qualify for our RTO program: </p>
-                            <ul class="list-group">
-                                <li class="list-group-item bg-transparent text-white">Combined household income of at least $75,000 annually</li>
-                                <li class="list-group-item bg-transparent">A minimum down payment of $7,500 or 3% of purchase price</li>
-                                <li class="list-group-item bg-transparent">Stable, consistent income for at least 2 years for one applicant</li>
-                                <li class="list-group-item bg-transparent">Commitment to see credit repair specialist to improve your credit rating</li>
-                                <li class="list-group-item bg-transparent">Discharged from bankruptcy for more than 2 years</li>
-                                <li class="list-group-item bg-transparent"> Consumer proposal already in progress</li>
+                            <p class="text-center">We realize that you are having difficulty obtaining a mortgage on your own which be caused by a number of situations which do not necessarily reflect your true character or ability to pay. The following criteria will generally be required to qualify for our RTO program: </p>
+                            <ul class="text-left">
+                                <li class="text-left  text-white">Combined household income of at least $75,000 annually</li>
+                                <li class="text-left ">A minimum down payment of $7,500 or 3% of purchase price</li>
+                                <li class="text-left ">Stable, consistent income for at least 2 years for one applicant</li>
+                                <li class="text-left ">Commitment to see credit repair specialist to improve your credit rating</li>
+                                <li class="text-left ">Discharged from bankruptcy for more than 2 years</li>
+                                <li class="text-left "> Consumer proposal already in progress</li>
                             </ul>
                         </div>
                     </div>
@@ -64,10 +64,11 @@
             </div>
 
             <div class="d-flex align-items-stretch col-lg-4 col-md-6 mb-4">
-                <div class="card bg-danger text-white text-center">
+                <div class="card bg-success text-white text-center">
                     <h4 class="card-header bg-transparent p-3">2. Financial Approval</h4>
                     <div class="card-body Aligner">
                         <div class="Aligner-item">
+                            <i class="fas fa-file-invoice-dollar fa-10x text-white mb-4"></i>
                             <!-- <h4 class="card-header bg-transparent mb-3">2. Financial Approval</h4> -->
                             <p>We will consult with you to identify the value of a home you can afford at the end of the 2-4 year period. Analyzing your financial information to ensure you would qualify at the end of term is crucial.  After verifying your employment, income and personal information we will approve you for our RTO program. There will be a non- refundable deposit of $500 at this stage to show your commitment, and to cover our costs of reserving the financing.</p>
                         </div>
@@ -79,6 +80,7 @@
                     <h4 class="card-header bg-transparent p-3">3. Choosing Your Home</h4>    
                     <div class="card-body Aligner">
                         <div class="Aligner-item">
+                            <i class="fas fa-home fa-10x text-white d-none d-lg-block mb-4"></i>
                             <!-- <h4 class="card-header bg-transparent mb-3">3. Choosing Your Home</h4>     -->
                             <p>This is the fun part but also the most important stage in the process. By this point you will know the price limit you are approved for and can take your time to find your perfect home. You can work with your existing real estate agent, or we can suggest a quality realtor from our network. There are a few guidelines we will review with you – such as no major “fixer upper”.</p>
                         </div>
@@ -86,7 +88,7 @@
                 </div>
             </div>
             <div class="d-flex align-items-stretch col-lg-4 col-md-6 mb-4">
-                <div class="card bg-info text-white text-center">
+                <div class="card bg-success md-bg-danger text-white text-center">
                     <h4 class="card-header bg-transparent p-3">4. Purchasing the Home</h4>
                     <div class="card-body Aligner">
                         <div class="Aligner-item">
@@ -101,6 +103,7 @@
                     <h4 class="card-header bg-transparent p-3">5. Enjoying the Home</h4>
                     <div class="card-body Aligner">
                         <div class="Aligner-item">
+                            <i class="fas fa-smile fa-10x d-none d-md-block mb-3"></i>
                             <!-- <h4 class="card-header bg-transparent mb-3">5. Enjoying the Home</h4> -->
                             <p> You enjoy all the benefits of home ownership during the rental term and can customize and improve your home. Any structural modifications to the home will require our approval, and if necessary the proper permits.</p>
                         </div>
