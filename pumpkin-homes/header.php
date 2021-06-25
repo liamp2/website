@@ -25,3 +25,4 @@
     
     <title>Pumpkin Homes</title>
 </head>
+<?php $activePage = '' ?>

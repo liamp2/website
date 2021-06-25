@@ -1,6 +1,6 @@
 <?php include 'header.php' ?>
 <body>
-    
+    <?php $activePage = 'about.php' ?>
     <?php include 'navbar.php'?>
 
     <!-- ABOUT US -->

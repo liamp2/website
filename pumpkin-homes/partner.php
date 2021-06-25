@@ -1,6 +1,6 @@
 <?php include 'header.php' ?>
 <body>
-    
+<?php $activePage = 'partner.php' ?>
     <?php include 'navbar.php' ?>
 
     <!-- INVESTORS -->

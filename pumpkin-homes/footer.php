@@ -404,8 +404,8 @@
         </div>
         <div class="modal-footer ">
             <div class="input-group d-grid">
-                <!-- <button class="btn btn-primary text-white" type="submit" ng-disabled="applicationForm.$invalid" ng-click="formSubmit(form)">Submit</button> -->
-                <button class="btn btn-primary text-white" type="submit" id="applicationForm"   ng-click="submitApplication(form)">Submit</button>
+                <button class="btn btn-primary text-white" type="submit" ng-disabled="applicationForm.$invalid" ng-click="formSubmit(form)">Submit</button>
+                <!-- <button class="btn btn-primary text-white" type="submit" id="applicationForm"   ng-click="submitApplication(form)">Submit</button> -->
             </div>
         </div>
         </div>

@@ -1,5 +1,6 @@
 <?php include 'header.php' ?>
 <body>
+    <?php $activePage = 'index.php' ?>
     <?php include 'navbar.php' ?>
 
     <!-- SHOWCASE -->
@@ -14,10 +15,10 @@
                 <div class="carousel-item carousel-wrap active">
                     <img src="img/welcome.jpg" alt="welcomeImage" class="carousel-bg">
                     <div class="container">
-                        <div class="carousel-caption d-none d-sm-block mb-5">
-                            <h1 class="display-3 text-primary">Heading One</h1>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum rerum dignissimos et eveniet deserunt magnam tempora nesciunt, recusandae facere!</p>
-                            <a href="#" class="btn btn-danger btn-lg">Sign Up Now!</a>
+                        <div class="carousel-caption mb-5">
+                            <h1 class="display-3 text-primary">We Can Help You Purchase A Home</h1>
+                            <p class="lead text-black">Our Rent-To-Own (RTO) program helps people buy a home that they cannot get a mortgage for on their own</p>
+                            <a class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#application-modal">Apply Now!</a>
 
                         </div>
                     </div>
@@ -25,10 +26,10 @@
                 <div class="carousel-item carousel-wrap">
                     <img src="img/carousel2.jpg" alt="house" class="carousel-bg">
                     <div class="container">
-                        <div class="carousel-caption d-none d-sm-block mb-5">
-                            <h1 class="display-3 text-primary">Heading Two</h1>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum rerum dignissimos et eveniet deserunt magnam tempora nesciunt, recusandae facere!</p>
-                            <a href="#" class="btn btn-warning btn-lg">Learn More</a>
+                        <div class="carousel-caption mb-5">
+                            <h1 class="display-3 text-success">What is Rent-To-Own?</h1>
+                            <p class="lead text-black">Rent-To-Own is a program where we purchase a house that we agree on, and you make rent payments that help you buy back the house in a few years.</p>
+                            <a href="RTO.php" class="btn btn-primary btn-lg">Learn More</a>
 
                         </div>
                     </div>
@@ -36,10 +37,10 @@
                 <div class="carousel-item carousel-wrap">
                     <img src="img/carousel3.jpg" alt="house" class="carousel-bg">
                     <div class="container">
-                        <div class="carousel-caption d-none d-sm-block mb-5">
-                            <h1 class="display-3">Heading Three</h1>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum rerum dignissimos et eveniet deserunt magnam tempora nesciunt, recusandae facere!</p>
-                            <a href="#" class="btn btn-danger btn-lg">About</a>
+                        <div class="carousel-caption mb-5">
+                            <h1 class="display-3 text-primary">Work With Us</h1>
+                            <p class="lead text-black">Not looking to buy a house? Want to work with us as an investor, realtor, mortgage broker?</p>
+                            <a href="partner.php" class="btn btn-success btn-lg">Learn More</a>
 
                         </div>
                     </div>

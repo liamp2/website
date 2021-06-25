@@ -1,6 +1,6 @@
 <?php include 'header.php' ?>
 <body>
-    
+    <?php $activePage = 'RTO.php' ?>
     <?php include 'navbar.php' ?>
 
 
