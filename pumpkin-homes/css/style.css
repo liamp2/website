@@ -1,7 +1,18 @@
 .navbar {
   box-shadow: 2px 2px 3px #64b743;
-  opacity: 0.5;
   background: white; }
+
+.nav-item.active{
+  border-bottom: #64b743 3px solid;
+}
+
+.nav-link.active{
+  color: 64b743 !important;
+}
+
+.text-black{
+  color: black;
+}
 
 .carousel-item{
   height: 450px;
@@ -15,9 +26,10 @@
 .carousel-bg {
   opacity: 0.3;
   /* background-position: 0 -305px; */
-  position: absolute;
+  position: relative;
+  top: 0;
   width: 100%;
-  height: auto;
+  
 }
 
 #testimonials .slick-prev::before, #testimonials .slick-next::before {
