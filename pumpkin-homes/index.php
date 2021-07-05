@@ -1,3 +1,4 @@
+<?php $title = 'Rent To Own Home Barrie, Simcoe, York Region | Lease To Own Home' ?>
 <?php include 'header.php' ?>
 <body>
 <?php $activePage = 'index.php' ?>
@@ -5,11 +6,11 @@
 
 <!-- SHOWCASE -->
 <section id="showcase" class="mb-5">
-    <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div id="main-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#main-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#main-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#main-carousel" data-bs-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item carousel-wrap active">
@@ -17,8 +18,8 @@
                 <div class="container">
                     <div class="carousel-caption mb-5">
                         <h1 class="display-3 text-success">We Can Help You Purchase A Home</h1>
-                        <p class="lead text-black">Our Rent-To-Own (RTO) program helps people buy a home that they cannot get a mortgage for on their own</p>
-                        <a class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#application-modal">Apply Now!</a>
+                        <p class="lead text-black">Our Rent-To-Own (RTO) program helps people buy a home that they cannot get a mortgage for on their own.</p>
+                        <a class="btn btn-primary btn-lg text-white" data-bs-toggle="modal" data-bs-target="#application-modal">See If Rent To Own Can Help You</a>
 
                     </div>
                 </div>
@@ -29,7 +30,7 @@
                     <div class="carousel-caption mb-5">
                         <h1 class="display-3 text-success">What is Rent-To-Own?</h1>
                         <p class="lead text-black">Rent-To-Own is a program where we purchase a house that we agree on, and you make rent payments that help you buy back the house in a few years.</p>
-                        <a href="RTO.php" class="btn btn-primary btn-lg">Learn More</a>
+                        <a href="rent-to-own-home.php" class="btn btn-primary btn-lg text-white">Learn More About Rent To Own </a>
 
                     </div>
                 </div>
@@ -40,17 +41,17 @@
                     <div class="carousel-caption mb-5">
                         <h1 class="display-3 text-success">Work With Us</h1>
                         <p class="lead text-black">Not looking to buy a house? Want to work with us as an investor, realtor, mortgage broker?</p>
-                        <a href="partner.php" class="btn btn-primary btn-lg">Learn More</a>
+                        <a href="partner.php" class="btn btn-primary btn-lg text-white">Learn More</a>
 
                     </div>
                 </div>
             </div>
         </div>
 
-        <a href="#myCarousel" data-bs-slide="prev" class="carousel-control-prev">
+        <a href="#main-carousel" data-bs-slide="prev" class="carousel-control-prev">
             <span class="carousel-control-prev-icon"></span>
         </a>
-        <a href="#myCarousel" data-bs-slide="next" class="carousel-control-next">
+        <a href="#main-carousel" data-bs-slide="next" class="carousel-control-next">
             <span class="carousel-control-next-icon"></span>
         </a>
     </div>
@@ -189,25 +190,25 @@
 <?php include 'footer.php' ?>
 <script>
     //configure slider
-    // var myCarousel = document.querySelector('#main-carousel')
-    // var carousel = new bootstrap.Carousel(myCarousel, {
-    //     interval: 1000,
-    //     wrap: true,
-    //     touch: true
-    // });
+    var myCarousel = document.querySelector('#main-carousel')
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 8000,
+        wrap: true,
+        touch: true
+    });
 
     //image carousel
-    $('.main-carousel').slick({
-        inifinite: true,
-        slideToShow: 1,
-        slideToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 6000,
-        dots: true,
-        //prevArrow:'<i class="fas fa-chevron-circle-left main-carousel-prev-arrow"></i>',
-        //nextArrow:'<i class="fas fa-chevron-circle-right main-carousel-next-arrow"></i>',
+    // $('.main-carousel').slick({
+    //     inifinite: true,
+    //     slideToShow: 1,
+    //     slideToScroll: 1,
+    //     autoplay: true,
+    //     autoplaySpeed: 6000,
+    //     dots: true,
+    //     //prevArrow:'<i class="fas fa-chevron-circle-left main-carousel-prev-arrow"></i>',
+    //     //nextArrow:'<i class="fas fa-chevron-circle-right main-carousel-next-arrow"></i>',
 
-    });
+    // });
 
         //testimonial slider
         $('.testimonial-slider').slick({

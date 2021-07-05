@@ -2,34 +2,7 @@
 <footer class="main-footer bg-dark ">
     <div class="container text-primary">
         <div class="row pt-4">
-            <div class="col-lg-3 col-md-6 py-4">
-                <h5 class="text-white">Quick Links</h5>
-                <div class="text-left">
-                    <a href="index.php" class="text-decoration-none">Home</a><br>
-                    <a href="RTO.php" class="text-decoration-none">RTO Program</a><br>
-                    <a href="about.php" class="text-decoration-none">About Us</a><br>
-                    <a class="text-decoration-none" href="" data-bs-target="#application-modal" data-bs-toggle="modal">Apply Now</a><br>
-                    <a href="partner.php#investors" class="text-decoration-none">Investors</a><br>
-                    <a href="partner.php#realtors" class="text-decoration-none">Realtors</a><br>
-                    <a href="partner.php#brokers" class="text-decoration-none">Brokers</a><br>
-                    <a href="RTO.php#faq" class="text-decoration-none">FAQ</a><br>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 py-4">
-                <h5 class="text-white">Mailing Address</h5>
-                <div class="text-left">
-                    <p>
-                        6-14845 Yonge Street
-                        <br>
-                        Suite 441
-                        <br>
-                        Aurora, Ontario
-                        <br>
-                        L4G 6P7
-                    </p>
-                </div>
-            </div>
-            
+
             <div class="col-lg-3 col-md-6 py-4">
                 <h5 class="text-white">Contact Us</h5>
                 <h6>David Patterson <span class="text-muted"> - New Inquiries, Applications and Questions </span></h6>
@@ -43,7 +16,26 @@
                 <p>Email: <a href="mailto:dgpatters@hotmail.ca" class="text-decoration-none">dgpatters@hotmail.ca</a>
                 </p>
                 <button class="btn btn-success text-white" data-bs-target="#contact-modal" data-bs-toggle="modal">Contact Us Now</button>
-            </div>     
+            </div>  
+            <div class="col-lg-3 col-md-6 py-4">
+                <h5 class="text-white">Quick Links</h5>
+                <div class="text-left">
+                    <a href="index.php" class="text-decoration-none">Home</a><br>
+                    <a href="RTO.php" class="text-decoration-none">Rent To Own Program</a><br>
+                    <a href="about.php" class="text-decoration-none">About Us</a><br>
+                    <a class="text-decoration-none" href="" data-bs-target="#application-modal" data-bs-toggle="modal">Rent To Own Application</a><br>
+                    <a href="partner.php#investors" class="text-decoration-none">Investors</a><br>
+                    <a href="partner.php#realtors" class="text-decoration-none">Realtors</a><br>
+                    <a href="partner.php#brokers" class="text-decoration-none">Brokers</a><br>
+                    <a href="RTO.php#faq" class="text-decoration-none">Rent To Own FAQ</a><br>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 py-4">
+            <h5 class="text-white">Rent to Own and Lease to Own</h5>
+            <div class="text-left">Rent to Own a Home and Lease to Own Home Barrie, Simcoe, Bradford, Tottenham, York Region </div>
+            </div>
+            
+               
             
             <div class="col-lg-3 col-md-6 py-4">
                 <h5 class="text-white">Follow Us</h5>
@@ -51,7 +43,18 @@
                     <i class="fab fa-facebook-square fa-2x" ></i>
                 </a>
 
-                <h5 class="text-white py-2">Blog</h5>
+                <h5 class="text-white my-3">Mailing Address</h5>
+                <div class="text-left">
+                    <p>
+                        6-14845 Yonge Street
+                        <br>
+                        Suite 441
+                        <br>
+                        Aurora, Ontario
+                        <br>
+                        L4G 6P7
+                    </p>
+                </div>
 
                 <div class="col py-3">
                     <p class="text-muted">&copy; <span id="year"></span> Pumpkin Homes</p>

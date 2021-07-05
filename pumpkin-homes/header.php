@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="formApp">
+<html lang="en-CA" ng-app="formApp">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +23,6 @@
     
     <script src="applicationForm.js"></script>
     
-    <title>Pumpkin Homes</title>
+    <title><?php echo $title;?></title>
 </head>
 <?php $activePage = '' ?>

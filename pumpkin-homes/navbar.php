@@ -14,8 +14,8 @@
                 <!-- <li class="nav-item">
                     <a href="feature-home.php" class="nav-link">Feature Home</a>
                 </li> -->
-                <li class="nav-item <?php if($activePage=="RTO.php"){echo "active";}?>">
-                    <a href="RTO.php" class="nav-link <?php if($activePage=="RTO.php"){echo "active";}?>">RTO Program</a>
+                <li class="nav-item <?php if($activePage=="rent-to-own-home.php"){echo "active";}?>">
+                    <a href="rent-to-own-home.php" class="nav-link <?php if($activePage=="rent-to-own-home.php"){echo "active";}?>">Rent To Own Program</a>
                 </li>
                 <li class="nav-item <?php if($activePage=="about.php"){echo "active";}?>">
                     <a href="about.php" class="nav-link <?php if($activePage=="about.php"){echo "active";}?>">About Us</a>

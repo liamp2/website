@@ -1,3 +1,4 @@
+<?php $title = 'Invest In Rent To Own | Owning A Rental Property' ?>
 <?php include 'header.php' ?>
 <body>
 <?php $activePage = 'partner.php' ?>
@@ -132,16 +133,16 @@
                         We will work together to qualify the client for success now and for the End of Term.
                     </li>
                     <li class="list-group-item">
-                        We will finance the home for the client  through your mortgage brokerage.
+                        We will finance the home for the client through your mortgage brokerage.
                     </li>
                     <li class="list-group-item">
-                        You will be in an ideal situation to finance the client for their own mortgage at the end of a 2-4 year RTO term.
+                        You will be in an ideal situation to finance the client for their own mortgage at the end of a 2-4 year Rent To Own term.
                     </li>
                     <li class="list-group-item">
                         We provide professional referral fees which increase with repeat referrals.
                     </li>
                     <li class="list-group-item">
-                        Request  details on our Professional Lead Referral Fees.
+                        Request details on our Professional Lead Referral Fees.
                     </li>
                 </ul>
             </div>
@@ -169,7 +170,7 @@
                     <div>
                         <blockquote class="blockquote">
                             <p class="mb-4 fst-italic fs-6 text-success">
-                                ?I have witnessed the evolution of Pumpkin Homes from it's inception an have been impressed with them from day one. The leadership group of this company is clearly customer focused.
+                                "I have witnessed the evolution of Pumpkin Homes from it's inception an have been impressed with them from day one. The leadership group of this company is clearly customer focused.
                                 and as the principal broker of a licensed, successful mortgage brokerage in Ontario, that is important to me.
                                 Serving clinetele that are candidates for a rent-to-own program is not easy and requires a common sense approach to lending. 
                                 Pumpkin Homes deals with challenging financial circumstances in such a way as to assist today's challenges to become tomorrow's successes."
