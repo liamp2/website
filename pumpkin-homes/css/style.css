@@ -7,7 +7,10 @@
 }
 
 .nav-link.active{
-  color: 64b743 !important;
+  color: #64b743 !important;
+}
+.nav-link:hover{
+  color: #64b743 !important;
 }
 
 .text-black{
@@ -68,6 +71,10 @@
 
 .order-9 {
   order: 9; }
+
+.order-10 {
+  order: 10;
+}
 
 .text-justify {
   text-align: justify; }
