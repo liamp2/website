@@ -1,3 +1,4 @@
+<?php $title = 'About Pumpkin Homes | Rent To Own Barrie, Simcoe York Region' ?>
 <?php include 'header.php' ?>
 <body>
 <?php $activePage = 'about.php' ?>
