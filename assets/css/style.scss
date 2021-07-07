@@ -1,6 +1,11 @@
+$primary:       #457b9d !default;
+$secondary:     #a8dadc !default;
+$accent:        #e63946 !default;
+$alternate:     #f1faee !default;
+$dark:          #1d3557 !default;
+
 html{
     overflow-x: hidden;
-    margin: 0px;
 }
 .main-background {
     background-image:-webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url(../img/bg1.jpg);
@@ -25,8 +30,12 @@ html{
 }
 
 .navbar{
-    position: sticky;
-    top: 0;
-    border-bottom: 4px solid  #64b743;
-    
+    border-bottom: 4px solid $accent; 
+}
+
+:target::before{
+    content: "";
+    display: block;
+    height: 3rem;
+    margin: -3rem 0 0;
 }
