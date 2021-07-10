@@ -48,26 +48,6 @@
                 <p class="text-justify">
                     <a href="https://www.sickkids.ca/" target="_blank">SickKids | The Hospital for Sick Children</a> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, molestias?
                 </p>
-
-                <div class="kenya-slider">
-                    <!-- <div class="img-container"> -->
-                        
-                        
-                        <img src="img/kenya1.webp"  id="carousel1" class="">
-                    <!-- </div> -->
-                    
-                    <!-- <div class="img-container"> -->
-                        <img src="img/kenya2.webp"  id="carousel2" class="" >
-                    <!-- </div> -->
-                    
-                    <!-- <div class="img-container"> -->
-                        <img src="img/kenya4.webp"  id="carousel4" class="">
-                    <!-- </div>
-                    <div class="img-container"> -->
-                        <img src="img/kenya5.webp"  id="carousel5" class="">
-                    <!-- </div> -->
-                </div>
-
             </div>
         </div>
     </div> 
@@ -76,17 +56,5 @@
 
 
 <?php include 'footer.php' ?>
-<script>
-
-    //KENYA SLIDER
-    $('.kenya-slider').slick({
-        inifinite: true,
-        slideToShow: 1,
-        slideToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 6000,
-        dots: true,
-    });
-</script>
 </body>
 </html>
