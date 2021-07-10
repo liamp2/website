@@ -26,6 +26,16 @@
   position: relative;
 }
 
+.carousel-bg1 {
+  opacity: 0.4;
+  /* background-position: 0 -305px; */
+  position: relative;
+  top: 0;
+  width: 100%;
+  
+}
+
+
 .carousel-bg {
   opacity: 0.3;
   /* background-position: 0 -305px; */
@@ -86,3 +96,12 @@
 .hr-primary {
   color: #e68217;
   box-shadow: 0px 1px 2px #e68217; }
+
+.input-group-width-lg{
+  width: 50% !important;
+  text-align: left;
+}
+
+.invalid-feedback{
+  text-align: right;
+}

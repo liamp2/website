@@ -1,5 +1,5 @@
 <!-- NAVBAR -->
-<nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light">
+<nav id="navbar" class="navbar navbar-expand-md bg-light">
     <div class="container">
         <a href="index.php" class="navbar-brand">Pumpkin Homes</a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

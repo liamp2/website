@@ -61,10 +61,10 @@
                             <p class="text-center">We realize that you are having difficulty obtaining a mortgage on your own which be caused by a number of situations which do not necessarily reflect your true character or ability to pay. 
                                 The following criteria will generally be required to qualify for our Rent To Own program: </p>
                             <ul class="text-left">
-                                <li class="text-left  text-white">Combined household income of at least $75,000 annually</li>
-                                <li class="text-left ">A minimum down payment of $7,500 or 3% of purchase price</li>
+                                <li class="text-left  text-white">Combined household income of at least $90,000 annually</li>
+                                <li class="text-left ">A minimum down payment of $10,000 or 3% of purchase price</li>
                                 <li class="text-left ">Stable, consistent income for at least 2 years for one applicant</li>
-                                <li class="text-left ">Commitment to see credit repair specialist to improve your credit rating</li>
+                                <li class="text-left ">Commitment to see credit repair specialist</li>
                                 <li class="text-left ">Discharged from bankruptcy for more than 2 years</li>
                                 <li class="text-left ">Consumer proposal already in progress</li>
                             </ul>

@@ -123,65 +123,64 @@
         <div class="row">
             <h2 class="text-center text-primary mb-3">Mortgage Brokers</h2>
             <hr class="hr-green">
-            <div class="col-lg-7">
-                <p class="text-center">
-                    Do you have a client that you cannot help find financing for due to damaged credit? Have you turned down prospects who have poor credit ? Do you want to expand your business to address a new business segment with investors?
-                </p>
-                <p class="text-center"><strong>We can help!</strong></p>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        We will work together to qualify the client for success now and for the End of Term.
-                    </li>
-                    <li class="list-group-item">
-                        We will finance the home for the client through your mortgage brokerage.
-                    </li>
-                    <li class="list-group-item">
-                        You will be in an ideal situation to finance the client for their own mortgage at the end of a 2-4 year Rent To Own term.
-                    </li>
-                    <li class="list-group-item">
-                        We provide professional referral fees which increase with repeat referrals.
-                    </li>
-                    <li class="list-group-item">
-                        Request details on our Professional Lead Referral Fees.
-                    </li>
-                </ul>
+            
+            <p class="text-center">
+                Do you have a client that you cannot help find financing for due to damaged credit? Have you turned down prospects who have poor credit ? Do you want to expand your business to address a new business segment with investors?
+            </p>
+            <p class="text-center"><strong>We can help!</strong></p>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    We will work together to qualify the client for success now and for the End of Term.
+                </li>
+                <li class="list-group-item">
+                    We will finance the home for the client through your mortgage brokerage.
+                </li>
+                <li class="list-group-item">
+                    You will be in an ideal situation to finance the client for their own mortgage at the end of a 2-4 year Rent To Own term.
+                </li>
+                <li class="list-group-item">
+                    We provide professional referral fees which increase with repeat referrals.
+                </li>
+                <li class="list-group-item">
+                    Request  details on our Professional Lead Referral Fees.
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="testimonial-header py-3">
+                <h5 class="text-primary text-center py-3">Hear From Our Satisfied Partners!</h5>
             </div>
-            <div class="col-lg-5">            
-                <div class="testimonial-header mb-3">
-                    <h5 class="text-primary text-center py-3">Hear From Our Satisfied Partners!</h5>
+            <div class="testimonial-slider">
+                <div>
+                    <blockquote class="blockquote">
+                        <p class="mb-4 fst-italic fs-6 text-success">
+                            "The Mortgage Wellness Group always enjoys working with David Patterson and the team from Pumpkin Homes.
+                            They are always responsive to our clients, and our clients' individual needs and circumstances. 
+                            Through the entire engagement they are thorough and professional. 
+                            Pumpkin Homes is quick to earn our clients' trust and always put our clients' concerns at ease.
+                            We look forward to working with David and Pumpkin Homes in the future." 
+                        </p>
+                        <footer class="blockquote-footer">Nick L'Ecuyer
+                            <cite title="Customer">- Principal Broker, The Mortgage Wellness Group</cite>
+                        </footer>
+                    </blockquote>
                 </div>
-                <div class="testimonial-slider">
-                    <div>
-                        <blockquote class="blockquote">
-                            <p class="mb-4 fst-italic fs-6 text-success">
-                                "The Mortgage Wellness Group always enjoys working with David Patterson and the team from Pumpkin Homes.
-                                They are always responsive to our clients, and our clients' individual needs and circumstances. 
-                                Through the entire engagement they are thorough and professional. 
-                                Pumpkin Homes is quick to earn our clients' trust and always put our clients' concerns at ease.
-                                We look forward to working with David and Pumpkin Homes in the future." 
-                            </p>
-                            <footer class="blockquote-footer">Nick L'Ecuyer
-                                <cite title="Customer">Principal Broker, The Mortgage Wellness Group</cite>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    
                 
-                    <div>
-                        <blockquote class="blockquote">
-                            <p class="mb-4 fst-italic fs-6 text-success">
-                                "I have witnessed the evolution of Pumpkin Homes from it's inception an have been impressed with them from day one. The leadership group of this company is clearly customer focused.
-                                and as the principal broker of a licensed, successful mortgage brokerage in Ontario, that is important to me.
-                                Serving clinetele that are candidates for a rent-to-own program is not easy and requires a common sense approach to lending. 
-                                Pumpkin Homes deals with challenging financial circumstances in such a way as to assist today's challenges to become tomorrow's successes."
-                            </p>
-                            <footer class="blockquote-footer">Chris Nichilo
-                                <cite title="Customer"> President, Magnetic Mortgages and Investing</cite>
-                            </footer>
-                        </blockquote>
-                    </div>
-                </div>            
-            </div>
+            
+                <div>
+                    <blockquote class="blockquote">
+                        <p class="mb-4 fst-italic fs-6 text-success">
+                            "I have witnessed the evolution of Pumpkin Homes from it's inception an have been impressed with them from day one. The leadership group of this company is clearly customer focused
+                            and as the principal broker of a licensed, successful mortgage brokerage in Ontario, that is important to me.
+                            Serving clinetele that are candidates for a rent-to-own program is not easy and requires a common sense approach to lending. 
+                            Pumpkin Homes deals with challenging financial circumstances in such a way as to assist today's challenges to become tomorrow's successes."
+                        </p>
+                        <footer class="blockquote-footer">Chris Nichilo
+                            <cite title="Customer"> - President, Magnetic Mortgages and Investing</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>    
         </div>
     </div>
 </section>

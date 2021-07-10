@@ -14,11 +14,11 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item carousel-wrap active">
-                <img src="img/welcome.jpg" alt="welcomeImage" class="carousel-bg">
+                <img src="img/home2.jpg" alt="welcomeImage" class="carousel-bg1">
                 <div class="container">
                     <div class="carousel-caption mb-5">
-                        <h1 class="display-3 text-success">We Can Help You Purchase A Home</h1>
-                        <p class="lead text-black">Our Rent-To-Own (RTO) program helps people buy a home that they cannot get a mortgage for on their own.</p>
+                        <h1 class="display-1 text-success font-weight-bold lead">We Can Help You Purchase A Home   </h1>
+                        <p class="lead text-black"> Our Rent-To-Own (RTO) program helps people become a home owner.</p>
                         <a class="btn btn-primary btn-lg text-white" data-bs-toggle="modal" data-bs-target="#application-modal">See If Rent To Own Can Help You</a>
 
                     </div>
@@ -39,7 +39,7 @@
                 <img src="img/carousel3.jpg" alt="house" class="carousel-bg">
                 <div class="container">
                     <div class="carousel-caption mb-5">
-                        <h1 class="display-3 text-success">Work With Us</h1>
+                        <h1 class="display-3 text-success">Partner With Us</h1>
                         <p class="lead text-black">Not looking to buy a house? Want to work with us as an investor, realtor, mortgage broker?</p>
                         <a href="partner.php" class="btn btn-primary btn-lg text-white">Learn More</a>
 
@@ -83,7 +83,7 @@
                     </div>
                     <div class="card-body">
                         <ul class="list-group-flush">
-                            <li class="list-group-item">Recently divorces or separated?</li>
+                            <li class="list-group-item">Recently divorced or separated?</li>
                             <li class="list-group-item">Moving and only one spouse has a job?</li>
                             <li class="list-group-item">New immigrant with no credit history?</li>
                             <li class="list-group-item">Denied refinancing for your home?</li>

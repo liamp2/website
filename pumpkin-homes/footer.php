@@ -3,41 +3,46 @@
     <div class="container text-primary">
         <div class="row pt-4">
 
-            <div class="col-lg-3 col-md-6 py-4">
+            <div class="col-lg-3 col-sm-6 py-4 order-1">
                 <h5 class="text-white">Contact Us</h5>
-                <h6>David Patterson <span class="text-muted"> - New Inquiries, Applications and Questions </span></h6>
-                <p>
+                <h6>David Patterson <span class="text-muted">
+                    <!-- - New Inquiries, Applications and Questions  -->
+                </span></h6>
+                <p class="text-nowrap">
                     
-                    Email: <a href="mailto:david@pumpkinhomes.ca" class="text-decoration-none">david@pumpkinhomes.ca</a> 
+                    <a href="mailto:david@pumpkinhomes.ca" class="text-decoration-none">david@pumpkinhomes.ca</a> 
                     <br>
-                    Phone: (647) 848-1668 EXT 1
+                    (647) 848-1668
                 </p>
-                <h6>Raquel Patterson <span class="text-muted"> - Administration, Rent and Payments</span></h6>
+                <!-- <h6>Raquel Patterson <span class="text-muted"> - Administration, Rent and Payments</span></h6>
                 <p>Email: <a href="mailto:dgpatters@hotmail.ca" class="text-decoration-none">dgpatters@hotmail.ca</a>
-                </p>
+                </p> -->
                 <button class="btn btn-success text-white" data-bs-target="#contact-modal" data-bs-toggle="modal">Contact Us Now</button>
             </div>  
-            <div class="col-lg-3 col-md-6 py-4">
+            <div class="col-lg-3 col-sm-6 py-4 order-2">
                 <h5 class="text-white">Quick Links</h5>
                 <div class="text-left">
                     <a href="index.php" class="text-decoration-none">Home</a><br>
-                    <a href="RTO.php" class="text-decoration-none">Rent To Own Program</a><br>
+                    <a href="rent-to-own-home.php" class="text-decoration-none">Rent To Own Program</a><br>
                     <a href="about.php" class="text-decoration-none">About Us</a><br>
-                    <a class="text-decoration-none" href="" data-bs-target="#application-modal" data-bs-toggle="modal">Rent To Own Application</a><br>
+                    <a class="text-decoration-none" href="" data-bs-target="#application-modal" data-bs-toggle="modal">Apply Now</a><br>
                     <a href="partner.php#investors" class="text-decoration-none">Investors</a><br>
                     <a href="partner.php#realtors" class="text-decoration-none">Realtors</a><br>
                     <a href="partner.php#brokers" class="text-decoration-none">Brokers</a><br>
-                    <a href="RTO.php#faq" class="text-decoration-none">Rent To Own FAQ</a><br>
+                    <a href="rent-to-own-home.php#faq" class="text-decoration-none">Rent To Own FAQ</a><br>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 py-4">
-            <h5 class="text-white">Rent to Own and Lease to Own</h5>
-            <div class="text-left">Rent to Own a Home and Lease to Own Home Barrie, Simcoe, Bradford, Tottenham, York Region </div>
+            <div class="col-lg-3 col-sm-6 py-4 order-4">
+                <h5 class="text-white">Rent to Own and Lease to Own</h5>
+                <div class="text-left">Rent to Own a Home and Lease to Own Home Barrie, Simcoe, Orilla, Bracebridge, Muskoka </div>
+                <div class="col py-3">
+                    <p class="text-muted">&copy; <span id="year"></span> Pumpkin Homes</p>
+                </div>
             </div>
             
                
             
-            <div class="col-lg-3 col-md-6 py-4">
+            <div class="col-lg-3 col-sm-6 py-4 order-3">
                 <h5 class="text-white">Follow Us</h5>
                 <a href="https://www.facebook.com/PumpkinHomes" class="text-primary" target="_blank">
                     <i class="fab fa-facebook-square fa-2x" ></i>
@@ -56,9 +61,7 @@
                     </p>
                 </div>
 
-                <div class="col py-3">
-                    <p class="text-muted">&copy; <span id="year"></span> Pumpkin Homes</p>
-                </div>
+               
             </div>
 
         </div>
@@ -162,7 +165,7 @@
             <button class="btn-close" data-bs-dismiss="modal"></button>
         </div>
 
-        <div class="modal-body">
+        <div class="modal-body text-wrap">
             <form name="applicationForm" ng-init="initForm()">
             <!-- <form name="applicationForm" action="formSubmit.php" method="POST"> -->
             <div class="mb-3">
@@ -170,8 +173,8 @@
             </div>
             
             <div class="form-group input-group mb-3">
-                <label class="input-group-text">
-                        Applicant Name <span class="text-danger ms-auto"> &nbsp;*</span>  
+                <label class="input-group-text input-group-width-lg text-wrap">
+                        Applicant Name <span class="text-danger"> &nbsp;*</span>  
                 </label>
                 <input type="name" class="form-control" placeholder="Applicant Name" 
                     name="applicantName" 
@@ -182,8 +185,8 @@
                 </div>
             </div>
             
-            <div class="form-group input-group mb-3">
-                <label for="name" class="input-group-text">
+            <div class="form-group text-right input-group mb-3">
+                <label for="name" class="input-group-text input-group-width-lg text-wrap">
                     Co-Applicant Name
                 </label>
                 <input type="name1" class="form-control" placeholder="Co-Applicant Name" 
@@ -192,7 +195,7 @@
             </div>
 
             <div class="form-group input-group mb-3">
-                <label for="phone-number" class="input-group-text">
+                <label for="phone-number" class="input-group-text input-group-width-lg text-wrap">
                     Phone Number <span class="text-danger"> &nbsp;*</span>  
                 </label>
                 
@@ -217,7 +220,7 @@
             </div>
 
             <div class="form-group input-group mb-3">
-                <label for="phone-number" class="input-group-text">
+                <label for="phone-number" class="input-group-text input-group-width-lg text-wrap">
                     Email <span class="text-danger"> &nbsp;*</span>   
                 </label>
                 <input type="email" class="form-control" placeholder="Email" 
@@ -231,7 +234,7 @@
 
             
             <div class="form-group input-group mb-3 Aligner">
-                <label class="input-group-text form-check form-check-inline">
+                <label class="input-group-text form-check form-check-inline input-group-width-lg text-wrap">
                     Married / Common Law <span class="text-danger"> &nbsp;*</span>  
                 </label>              
             
@@ -263,7 +266,7 @@
             
         
             <div class="form-group input-group mb-3">
-                <label class="input-group-text">
+                <label class="input-group-text input-group-width-lg text-wrap">
                     What City/Region are you looking to live in? <span class="text-danger">&nbsp; *</span>   
                 </label>
                 <input type="text" class="form-control" placeholder="City Name" 
@@ -276,7 +279,7 @@
             </div>
 
             <div class="form-group input-group mb-3">
-                <label class="input-group-text datepicker">
+                <label class="input-group-text datepicker input-group-width-lg text-wrap">
                     When are you looking to move in? <span class="text-danger">&nbsp; *</span>   
                 </label>
                 <input type="date" class="form-control" placeholder="Move in Date" 
@@ -289,7 +292,7 @@
             </div>
 
             <div class="form-group input-group mb-3">
-                <label class="input-group-text">
+                <label class="input-group-text input-group-width-lg text-wrap">
                     What value of home are you looking at? <span class="text-danger"> &nbsp;*</span>  
                 </label>
                 <input type="integer" class="form-control" placeholder="$500,000"
@@ -304,7 +307,7 @@
             </div>
 
             <div class="form-group input-group mb-3">
-                <label class="input-group-text">
+                <label class="input-group-text input-group-width-lg text-wrap">
                     How many bedrooms? <span class="text-danger"> &nbsp;*</span>  
                 </label>
                 <input type="number" min="1" max="10" class="form-control" value="3" 
@@ -318,7 +321,7 @@
 
 
             <div class="form-group input-group mb-3">
-                <label class="input-group-text">
+                <label class="input-group-text input-group-width-lg text-wrap">
                     What is your houselhold gross annual income? <span class="text-danger"> &nbsp;*</span>  
                 </label>
                 <input type="integer" class="form-control" placeholder="$50,000" 
@@ -334,7 +337,7 @@
             
 
             <div class="form-group input-group mb-3">
-                <label class="input-group-text">
+                <label class="input-group-text input-group-width-lg text-wrap">
                     What amount of down payment can you afford? <span class="text-danger"> &nbsp;*</span>  
                 </label>
                 <input type="integer" class="form-control" placeholder="$25,000" 
@@ -350,7 +353,7 @@
 
 
             <div class="form-group input-group mb-3 Aligner">
-                <label class="input-group-text form-check form-check-inline">
+                <label class="input-group-text form-check form-check-inline input-group-width-lg text-wrap">
                     Is your credit rating: <span class="text-danger"> &nbsp;*</span>  
                 </label>              
             
@@ -364,7 +367,7 @@
             
             
                 <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" 
+                    <input type="radio" class="form-check-input input-group-width-lg text-wrap" 
                     name="credit-rating"
                     value="false" 
                     ng-model="form.goodCreditRating" required> 
