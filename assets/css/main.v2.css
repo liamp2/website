@@ -8,8 +8,7 @@
 
 .vertical-align {
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  align-items: center; }
 
 .vertical-align-self {
   max-width: 100%; }

@@ -1,35 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-CA">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-    <title> Liam Patterson  </title>
-    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.1.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/ef72bf579d.js" crossorigin="anonymous"></script>
-
-   <style>
-        @media screen and (max-width:450px){
-            .topNav a:not(:first-child) {display: none; }
-            .topNav a.icon{
-                float: right;
-                display: block;
-            }
-        }
-
-        @media screen and (max-width:450px){
-            .topNav.responsive {position: sticky; }
-            .topNav.responsive .icon{
-                position: sticky;
-                right: 0;
-                top: 0;
-            }
-            .topNav.responsive a{
-                float: none;
-                display: block;
-                text-align: left;
-            }
-        }
-        
-    </style>
+    
 </head>

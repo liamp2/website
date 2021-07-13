@@ -4,9 +4,9 @@ $accent:        #e63946 !default;
 $alternate:     #f1faee !default;
 $dark:          #1d3557 !default;
 
-html{
-    overflow-x: hidden;
-}
+// html{
+//     overflow-x: hidden;
+// }
 .main-background {
     background-image:-webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url(../img/bg1.jpg);
     background-attachment: fixed;
@@ -19,11 +19,13 @@ html{
 .vertical-align {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
   
 .vertical-align-self {
     max-width: 100%; 
 }
+
 
 .vetical-align-self--top {
     align-self: flex-start; 
