@@ -1,12 +1,14 @@
 $primary:       #457b9d !default;
+$primary-shade: #37627d !default;
 $secondary:     #a8dadc !default;
 $accent:        #e63946 !default;
 $alternate:     #f1faee !default;
 $dark:          #1d3557 !default;
 
-// html{
-//     overflow-x: hidden;
-// }
+html{
+    overflow-x: hidden;
+}
+
 .main-background {
     background-image:-webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url(../img/bg1.jpg);
     background-attachment: fixed;
@@ -35,9 +37,46 @@ $dark:          #1d3557 !default;
     border-bottom: 4px solid $accent; 
 }
 
-:target::before{
-    content: "";
-    display: block;
-    height: 3rem;
-    margin: -3rem 0 0;
+.nav-link {
+    :hover{
+        color: $accent !important;
+    }
+    .active{
+        color: $accent !important;
+    }
+}
+
+.hr-accent{
+    // color: $accent;
+    // box-shadow: 3rem 3rem 3rem $accent;
+    border-top: 6px solid $accent;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.hr-dark{
+    border-top: 6px solid $dark;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.img-rounded{
+    background-image: url(../img/headshot.jpg);
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.company-logo {
+    max-height: 75px;   
+}
+
+.work-header{
+    padding: 2rem;
+    border-bottom: 3px solid $dark;
+}
+
+.work-body{
+    padding: 2rem;
 }

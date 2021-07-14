@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
     <!-- CSS only -->
     <link rel="stylesheet" href="assets/css/bootstrap-5.0.1.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.v3.css">
     
     
 </head>

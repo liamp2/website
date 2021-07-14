@@ -72,6 +72,7 @@ $colors: (
 
 // scss-docs-start theme-color-variables
 $primary:       #457b9d !default;
+$primary-shade: #37627d !default;
 $secondary:     #a8dadc !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -87,6 +88,7 @@ $theme-colors: (
   "accent":     $accent,
   "alternate":  $alternate,
   "primary":    $primary,
+  "primary-shade": $primary-shade,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
